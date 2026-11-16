@@ -1,0 +1,243 @@
+{
+  "engine": "MuJoCo 3.3.7",
+  "variant": "G2 CRS + dual SwiftPicker",
+  "base": "free rigid base driven by the original four steering/wheel pairs",
+  "source_commit": "795b3fc77e4dd9f3ef972302ab90420c35450f62",
+  "inertia_repairs": [
+    {
+      "link": "body_link4",
+      "original": [
+        0.004042693,
+        0.10648367,
+        0.12366844
+      ],
+      "corrected": [
+        0.0073282123,
+        0.1097691893,
+        0.11709740140000001
+      ],
+      "reason": "Vendor principal inertia violates triangle inequality; trace-preserving projection"
+    },
+    {
+      "link": "head_link1",
+      "original": [
+        0.00090246038,
+        0.00084988987,
+        4.8123345e-05
+      ],
+      "corrected": [
+        0.0009002366975,
+        0.00085100171125,
+        4.923518624999996e-05
+      ],
+      "reason": "Vendor principal inertia violates triangle inequality; trace-preserving projection"
+    }
+  ],
+  "actuators": {
+    "idx01_body_joint1": {
+      "kp": 2000,
+      "kv": 100,
+      "effort_Nm": 50.0,
+      "velocity_limit_rad_s": 1.21
+    },
+    "idx02_body_joint2": {
+      "kp": 2000,
+      "kv": 100,
+      "effort_Nm": 50.0,
+      "velocity_limit_rad_s": 1.21
+    },
+    "idx03_body_joint3": {
+      "kp": 2000,
+      "kv": 100,
+      "effort_Nm": 50.0,
+      "velocity_limit_rad_s": 1.21
+    },
+    "idx04_body_joint4": {
+      "kp": 2000,
+      "kv": 100,
+      "effort_Nm": 50.0,
+      "velocity_limit_rad_s": 1.21
+    },
+    "idx05_body_joint5": {
+      "kp": 2000,
+      "kv": 100,
+      "effort_Nm": 50.0,
+      "velocity_limit_rad_s": 1.21
+    },
+    "idx21_arm_l_joint1": {
+      "kp": 500,
+      "kv": 40,
+      "effort_Nm": 108.0,
+      "velocity_limit_rad_s": 3.9
+    },
+    "idx22_arm_l_joint2": {
+      "kp": 500,
+      "kv": 40,
+      "effort_Nm": 108.0,
+      "velocity_limit_rad_s": 3.9
+    },
+    "idx23_arm_l_joint3": {
+      "kp": 500,
+      "kv": 40,
+      "effort_Nm": 35.0,
+      "velocity_limit_rad_s": 3.6
+    },
+    "idx24_arm_l_joint4": {
+      "kp": 500,
+      "kv": 40,
+      "effort_Nm": 35.0,
+      "velocity_limit_rad_s": 3.6
+    },
+    "idx25_arm_l_joint5": {
+      "kp": 500,
+      "kv": 40,
+      "effort_Nm": 18.0,
+      "velocity_limit_rad_s": 4.7
+    },
+    "idx26_arm_l_joint6": {
+      "kp": 500,
+      "kv": 40,
+      "effort_Nm": 18.0,
+      "velocity_limit_rad_s": 4.7
+    },
+    "idx27_arm_l_joint7": {
+      "kp": 500,
+      "kv": 40,
+      "effort_Nm": 18.0,
+      "velocity_limit_rad_s": 4.7
+    },
+    "idx31_gripper_l_inner_joint1": {
+      "kp": 150,
+      "kv": 4,
+      "effort_Nm": 18,
+      "velocity_limit_rad_s": 2.0
+    },
+    "idx61_arm_r_joint1": {
+      "kp": 500,
+      "kv": 40,
+      "effort_Nm": 108.0,
+      "velocity_limit_rad_s": 3.9
+    },
+    "idx62_arm_r_joint2": {
+      "kp": 500,
+      "kv": 40,
+      "effort_Nm": 108.0,
+      "velocity_limit_rad_s": 3.9
+    },
+    "idx63_arm_r_joint3": {
+      "kp": 500,
+      "kv": 40,
+      "effort_Nm": 35.0,
+      "velocity_limit_rad_s": 3.6
+    },
+    "idx64_arm_r_joint4": {
+      "kp": 500,
+      "kv": 40,
+      "effort_Nm": 35.0,
+      "velocity_limit_rad_s": 3.6
+    },
+    "idx65_arm_r_joint5": {
+      "kp": 500,
+      "kv": 40,
+      "effort_Nm": 18.0,
+      "velocity_limit_rad_s": 4.7
+    },
+    "idx66_arm_r_joint6": {
+      "kp": 500,
+      "kv": 40,
+      "effort_Nm": 18.0,
+      "velocity_limit_rad_s": 4.7
+    },
+    "idx67_arm_r_joint7": {
+      "kp": 500,
+      "kv": 40,
+      "effort_Nm": 18.0,
+      "velocity_limit_rad_s": 4.7
+    },
+    "idx71_gripper_r_inner_joint1": {
+      "kp": 150,
+      "kv": 4,
+      "effort_Nm": 18,
+      "velocity_limit_rad_s": 2.0
+    },
+    "idx11_head_joint1": {
+      "kp": 2000,
+      "kv": 100,
+      "effort_Nm": 50.0,
+      "velocity_limit_rad_s": 2.5
+    },
+    "idx12_head_joint2": {
+      "kp": 2000,
+      "kv": 100,
+      "effort_Nm": 50.0,
+      "velocity_limit_rad_s": 2.5
+    },
+    "idx13_head_joint3": {
+      "kp": 2000,
+      "kv": 100,
+      "effort_Nm": 50.0,
+      "velocity_limit_rad_s": 2.5
+    },
+    "idx111_chassis_lwheel_front_joint1": {
+      "kp": 100,
+      "kv": 5,
+      "effort_Nm": 15.0,
+      "velocity_limit_rad_s": 4.08
+    },
+    "idx112_chassis_lwheel_front_joint2": {
+      "kp": 100,
+      "kv": 5,
+      "effort_Nm": 8.0,
+      "velocity_limit_rad_s": 20.9
+    },
+    "idx131_chassis_rwheel_front_joint1": {
+      "kp": 100,
+      "kv": 5,
+      "effort_Nm": 15.0,
+      "velocity_limit_rad_s": 4.08
+    },
+    "idx132_chassis_rwheel_front_joint2": {
+      "kp": 100,
+      "kv": 5,
+      "effort_Nm": 8.0,
+      "velocity_limit_rad_s": 20.9
+    },
+    "idx141_chassis_rwheel_rear_joint1": {
+      "kp": 100,
+      "kv": 5,
+      "effort_Nm": 15.0,
+      "velocity_limit_rad_s": 4.08
+    },
+    "idx142_chassis_rwheel_rear_joint2": {
+      "kp": 100,
+      "kv": 5,
+      "effort_Nm": 8.0,
+      "velocity_limit_rad_s": 20.9
+    },
+    "idx121_chassis_lwheel_rear_joint1": {
+      "kp": 100,
+      "kv": 5,
+      "effort_Nm": 15.0,
+      "velocity_limit_rad_s": 4.08
+    },
+    "idx122_chassis_lwheel_rear_joint2": {
+      "kp": 100,
+      "kv": 5,
+      "effort_Nm": 8.0,
+      "velocity_limit_rad_s": 20.9
+    }
+  },
+  "assumptions": [
+    "Mobile base uses vendor wheel geometry and torque limits; wheel-ground friction is simulation tuning, not hardware calibration",
+    "Position-controller gains and contact friction are simulation tuning, not calibrated hardware",
+    "Three NoSlip solver iterations suppress soft-contact friction drift; no parcel welds, pose overrides or added grasp forces",
+    "SwiftPicker master torque capped at 18 Nm per upstream hardware-cap comment",
+    "Internal collision pairs within each gripper excluded; gripper vs robot/environment remains enabled"
+  ],
+  "workstation_model": "scenes/g2_operation.xml",
+  "base_position_m": [
+    -0.25,
+    -0.85,
+    0.046
+  ]
+}

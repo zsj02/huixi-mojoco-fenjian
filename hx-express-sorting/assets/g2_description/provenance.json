@@ -1,0 +1,284 @@
+{
+  "repository": "AgibotTech/genie_sim",
+  "commit": "795b3fc77e4dd9f3ef972302ab90420c35450f62",
+  "upstream_prefix": "source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/",
+  "variant": "G2 CRS + dual SwiftPicker; fine collision",
+  "adaptations": [
+    "Resolve ROS package paths locally",
+    "Select fine collision geometry instead of coarse"
+  ],
+  "assets": [
+    {
+      "path": "robots/genie/g2/meshes/G2/convex/base_link_1.STL",
+      "sha256": "d1f022d21a440a48a523a088043380610410c5db794d9f7055ab9cc40d6ce404",
+      "bytes": 1284,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/G2/convex/base_link_1.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/G2/convex/base_link_2.STL",
+      "sha256": "9095f6e240ae7a4ab51d168e8086cd76652d6d9c542053ff12235fe89aa2fe74",
+      "bytes": 884,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/G2/convex/base_link_2.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/G2/convex/body_link2.STL",
+      "sha256": "92c0f4dfd3a1bd06ed973ec7cbbe7dcc93b6128ade9e04342a295c3e1787a823",
+      "bytes": 11584,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/G2/convex/body_link2.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/G2/convex/body_link3.STL",
+      "sha256": "bc6c3c31efbd4ddddd45b37df71254491906534c7504766654966365812996c0",
+      "bytes": 11584,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/G2/convex/body_link3.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/G2/convex/body_link4_1.STL",
+      "sha256": "b65824cce89eb1cca51a7b0e9ea278d1c687601dc188e9f92350c3d2ebf315e7",
+      "bytes": 4684,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/G2/convex/body_link4_1.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/G2/convex/body_link4_2.STL",
+      "sha256": "8609fc426c6927990e4ea2368571ab61e880c8af0d536181ab18a04751c0aa2a",
+      "bytes": 7284,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/G2/convex/body_link4_2.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/G2/convex/body_link4_3.STL",
+      "sha256": "edd696028af7230043e830076062536067b88ce5eb07eb8c59b095bb5b8942b9",
+      "bytes": 2584,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/G2/convex/body_link4_3.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/G2/convex/body_link5.STL",
+      "sha256": "4a998a0d51e09912c7f06f60f4dc68331aa3dbb0ad724541153330a62df48551",
+      "bytes": 13584,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/G2/convex/body_link5.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/G2/convex/head_link3.STL",
+      "sha256": "9ae1f4ef77d245d03ef81385cd862920b934eedc79c8139b96c34d6b438d5e00",
+      "bytes": 270684,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/G2/convex/head_link3.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/arm/crs/convex/arm_l_link1_fine_0.STL",
+      "sha256": "b8714aa3a24f3b9ed2ff90f9f169a9eba32d5b791637dfd8ddde18b2ba7da2d2",
+      "bytes": 1684,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/arm/crs/convex/arm_l_link1_fine_0.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/arm/crs/convex/arm_l_link2_fine_0.STL",
+      "sha256": "8ed6e1f9abb2d088a536f7cf67aa1ba645c054a813382227c3f463d65413ae16",
+      "bytes": 2184,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/arm/crs/convex/arm_l_link2_fine_0.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/arm/crs/convex/arm_l_link3_fine_0.STL",
+      "sha256": "da47636870866f7d14bbe23dc59e60f079ceab4bc23d0c979c23ab32f4a14103",
+      "bytes": 2184,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/arm/crs/convex/arm_l_link3_fine_0.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/arm/crs/convex/arm_l_link4_fine_0.STL",
+      "sha256": "610c1cefea6cd34ffd5ef75ad968dfa3483ca36ce2e5ffb4c234e974170c3f08",
+      "bytes": 2584,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/arm/crs/convex/arm_l_link4_fine_0.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/arm/crs/convex/arm_l_link5_fine_0.STL",
+      "sha256": "fbdbf3cd1e0c4534d4e4993d2a4163887b05a86062169a1c291b91327f4a8f2c",
+      "bytes": 2584,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/arm/crs/convex/arm_l_link5_fine_0.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/arm/crs/convex/arm_l_link6_fine_0.STL",
+      "sha256": "8eceab9dabcafcecd469310efd9ddbdf84c406cb334dffd26ad6f1a96eac2c57",
+      "bytes": 2184,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/arm/crs/convex/arm_l_link6_fine_0.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/arm/crs/convex/arm_l_link7_fine_0.STL",
+      "sha256": "b52ea9dec062b6ebd8dc77bb5b3960545425169f9af3f1b1fb6a55421cb51428",
+      "bytes": 8384,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/arm/crs/convex/arm_l_link7_fine_0.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/arm/crs/convex/arm_r_link1_fine_0.STL",
+      "sha256": "1cbe62ed816297afc2e3a19d20b9e79cdfe46c6a63278f7171f6b089ce714ae9",
+      "bytes": 2184,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/arm/crs/convex/arm_r_link1_fine_0.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/arm/crs/convex/arm_r_link2_fine_0.STL",
+      "sha256": "8ed6e1f9abb2d088a536f7cf67aa1ba645c054a813382227c3f463d65413ae16",
+      "bytes": 2184,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/arm/crs/convex/arm_r_link2_fine_0.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/arm/crs/convex/arm_r_link3_fine_0.STL",
+      "sha256": "da47636870866f7d14bbe23dc59e60f079ceab4bc23d0c979c23ab32f4a14103",
+      "bytes": 2184,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/arm/crs/convex/arm_r_link3_fine_0.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/arm/crs/convex/arm_r_link4_fine_0.STL",
+      "sha256": "ea6de2977458bd620bf66216f0b54412215431cc915c6830247d3c6fac522227",
+      "bytes": 2184,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/arm/crs/convex/arm_r_link4_fine_0.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/arm/crs/convex/arm_r_link5_fine_0.STL",
+      "sha256": "500650c3328f8f38f9875a45fcf5d0cfcac3c0235dcf2ad15fa68a303e1572a3",
+      "bytes": 2184,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/arm/crs/convex/arm_r_link5_fine_0.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/arm/crs/convex/arm_r_link6_fine_0.STL",
+      "sha256": "8eceab9dabcafcecd469310efd9ddbdf84c406cb334dffd26ad6f1a96eac2c57",
+      "bytes": 2184,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/arm/crs/convex/arm_r_link6_fine_0.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/arm/crs/convex/arm_r_link7_fine_0.STL",
+      "sha256": "b52ea9dec062b6ebd8dc77bb5b3960545425169f9af3f1b1fb6a55421cb51428",
+      "bytes": 8384,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/arm/crs/convex/arm_r_link7_fine_0.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/gripper/swiftpicker/base_link.STL",
+      "sha256": "dc86b6a32e9471c70a3d61c32647e94ef1757a49af21b81167c1723a8c95f9eb",
+      "bytes": 849934,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/gripper/swiftpicker/base_link.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/gripper/swiftpicker/camera_link.STL",
+      "sha256": "750873a92e9b23af434b29478c0be1cf54c4501bd05e092f4877a8718878cd25",
+      "bytes": 391184,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/gripper/swiftpicker/camera_link.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/gripper/swiftpicker/left_inner_link.STL",
+      "sha256": "14f804a49108b6943d29ca0acf1d3bd729c92633a8c9349469b38cda174ea6df",
+      "bytes": 165584,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/gripper/swiftpicker/left_inner_link.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/gripper/swiftpicker/left_outer_link.STL",
+      "sha256": "4dc04080b3c27816c22f1270aaffbd6e3462e760ed70a9063c8beeab6531fb6e",
+      "bytes": 165584,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/gripper/swiftpicker/left_outer_link.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/gripper/swiftpicker/left_support_link.STL",
+      "sha256": "a4c3248cf9f2c925d18aa9bb2e3659ef0d6a703252b006a3d9f1bc8ec2e917fb",
+      "bytes": 653284,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/gripper/swiftpicker/left_support_link.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/gripper/swiftpicker/right_inner_link.STL",
+      "sha256": "1bbd7dce7071851482eb7c47e17934847c98f3ead2cc1a148387dbec969ba4c4",
+      "bytes": 165584,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/gripper/swiftpicker/right_inner_link.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/gripper/swiftpicker/right_outer_link.STL",
+      "sha256": "93c508d0575ebd1a57550fa81f71fe62d98adfa04bf63748fd7fc4185988e97d",
+      "bytes": 165584,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/gripper/swiftpicker/right_outer_link.STL"
+    },
+    {
+      "path": "robots/genie/g2/meshes/gripper/swiftpicker/right_support_link.STL",
+      "sha256": "136475599e901768a0195df51634cb3f007d0d5a0c647855056aac31dc62a73b",
+      "bytes": 653284,
+      "url": "https://media.githubusercontent.com/media/AgibotTech/genie_sim/795b3fc77e4dd9f3ef972302ab90420c35450f62/source/geniesim_ros/src/ros_ws/src/genie_sim_robot_model/robots/genie/g2/meshes/gripper/swiftpicker/right_support_link.STL"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "genie.srdf.xacro",
+      "sha256": "7f18d2052678b60e69df63f9f48a528ee678fef2c590bba4b62869e133766b46"
+    },
+    {
+      "path": "robots/genie/g2/g2_crsB_no_gripper.urdf.xacro",
+      "sha256": "11afe08170707575a47e383b53ca49b971326deef77ce8bb6d1d080d9005d0ec"
+    },
+    {
+      "path": "robots/genie/g2/g2_crsB_omnipicker.urdf.xacro",
+      "sha256": "3818ae0c51018a310ba729c671f78294a47d904bb799a621a291bcf39a7685fb"
+    },
+    {
+      "path": "robots/genie/g2/g2_crsB_swiftpicker.urdf.xacro",
+      "sha256": "bea1a1dadaf091f0138c1f25f5357c36e52efd50804f0c97626243ed944472e1"
+    },
+    {
+      "path": "robots/genie/g2/g2_crsB_wuji.urdf.xacro",
+      "sha256": "5d6e56bd8dbfaf90fc77d934afc2080767d3d98a06cd50bb9396eafd535c7347"
+    },
+    {
+      "path": "robots/genie/g2/g2_crs_no_gripper.urdf.xacro",
+      "sha256": "b371200638990ba71474541312664d1d241eed6367ecea5207868330c77e20ee"
+    },
+    {
+      "path": "robots/genie/g2/g2_crs_omnipicker.urdf.xacro",
+      "sha256": "6b49d8d051d96e6cf3b422b07dbad45b13287f13a4edbe360be3c9542a3fe1f0"
+    },
+    {
+      "path": "robots/genie/g2/g2_crs_swiftpicker.urdf.xacro",
+      "sha256": "abafa82b132115e1275fe1173a165cb3183cfbe056631715f17c5ae8814614d4"
+    },
+    {
+      "path": "robots/genie/g2/xacro/G2.arm.crs.urdf.xacro",
+      "sha256": "a5162305932b348fe407b7faf2d27aa8cd018a84300db5172ab1da1b1cfa7031"
+    },
+    {
+      "path": "robots/genie/g2/xacro/G2.arm.crsB.params.default.xacro",
+      "sha256": "bf67c471896c332b039035bc742a97f1c350db607d7a0e33b4171661621ffe5f"
+    },
+    {
+      "path": "robots/genie/g2/xacro/G2.arm.crsB.params.sysid.xacro",
+      "sha256": "ad7cdb92f20db25006b3aab02df40db2b8efa9aa71464c3c8091b21b4bfcb28c"
+    },
+    {
+      "path": "robots/genie/g2/xacro/G2.arm.crsB.urdf.xacro",
+      "sha256": "3420e38832ab6bf067f8d6e90b56d998aef067379da0041491dd80f2df93ebab"
+    },
+    {
+      "path": "robots/genie/g2/xacro/G2.body.urdf.xacro",
+      "sha256": "68a6b3378cb746291e5ff2f484363033964c6a3f0aa51087c2ca8f3b734aecec"
+    },
+    {
+      "path": "robots/genie/g2/xacro/G2.chassis.urdf.xacro",
+      "sha256": "53cd3e11bfb40bec0392d6021019eb4d169ea743672cbc63e813a91f6d2d7431"
+    },
+    {
+      "path": "robots/genie/g2/xacro/G2.gripper.urdf.xacro",
+      "sha256": "912a2e8445bbd76eab28739a0d7882979a9dd7f2e949e953ced6cbf6b5908598"
+    },
+    {
+      "path": "robots/genie/g2/xacro/G2.urdf.xacro",
+      "sha256": "29906b8514dde1be8f7be008a0b1d1c72bc8ec12174f3c4daede5a7f9e6c5f80"
+    },
+    {
+      "path": "robots/genie/g2/xacro/common_properties.xacro",
+      "sha256": "480b9e848312956be3f478a7c803ad6dac14915cd1ecf4a639af3b7ec3ce3d57"
+    },
+    {
+      "path": "robots/genie/g2/xacro/gripper.omnipicker.urdf.xacro",
+      "sha256": "8bac5b5e848164918fcf3a64f662c91f728472ea816cdf178a50a0bfeb0b9a6c"
+    },
+    {
+      "path": "robots/genie/g2/xacro/gripper.swiftpicker.urdf.xacro",
+      "sha256": "866df3b9394d8da9d206f84fe90d6bf36270365aa5688c3dc725166d56977afe"
+    },
+    {
+      "path": "robots/genie/g2/xacro/gripper.wuji.urdf.xacro",
+      "sha256": "5b7a08d5971b4403ab463895a426834a8704f01b21be938422297e341f4232d7"
+    },
+    {
+      "path": "swiftpicker.srdf.xacro",
+      "sha256": "d02906dfc42917cb968fc4520f2a9e2a71aa3fdb1b032abfaf93127f3f825003"
+    }
+  ]
+}
