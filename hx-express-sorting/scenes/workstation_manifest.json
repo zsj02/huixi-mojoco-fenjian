@@ -1,0 +1,404 @@
+{
+  "scene_model": "scenes/g2_operation.xml",
+  "parcels": [
+    {
+      "id": "P001",
+      "prim_path": "/World/Parcels/P001",
+      "tracking_id": "HX000000420001",
+      "content": "shoes",
+      "packaging": "carton",
+      "dimensions_m": [
+        0.34805261558562206,
+        0.23544735760203844,
+        0.14331578288819732
+      ],
+      "mass_kg": 0.873,
+      "position_m": [
+        -1.0,
+        -0.25,
+        0.9226578914440986
+      ],
+      "yaw_rad": 0.12366181142555654,
+      "label_normal_local": [
+        0,
+        0,
+        1
+      ],
+      "label_size_m": [
+        0.1016,
+        0.1524
+      ],
+      "label_transform_local": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          1.0,
+          0.07365789144409866
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "initial_label_face": "up",
+      "rigid_approximation": false
+    },
+    {
+      "id": "P002",
+      "prim_path": "/World/Parcels/P002",
+      "tracking_id": "HX000000420002",
+      "content": "mug_with_padding",
+      "packaging": "carton",
+      "dimensions_m": [
+        0.21658072049015692,
+        0.19595398520538007,
+        0.18564061756299163
+      ],
+      "mass_kg": 0.55,
+      "position_m": [
+        -0.66,
+        -0.25,
+        0.9438203087814958
+      ],
+      "yaw_rad": -0.09669045550435808,
+      "label_normal_local": [
+        0,
+        -1,
+        0
+      ],
+      "label_size_m": [
+        0.1524,
+        0.1016
+      ],
+      "label_transform_local": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          -1.0,
+          -0.09997699260269004
+        ],
+        [
+          -0.0,
+          1.0,
+          6.123233995736766e-17,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "initial_label_face": "side",
+      "rigid_approximation": false
+    },
+    {
+      "id": "P003",
+      "prim_path": "/World/Parcels/P003",
+      "tracking_id": "HX000000420003",
+      "content": "jacket",
+      "packaging": "poly_mailer",
+      "dimensions_m": [
+        0.3479162093916138,
+        0.26839250438781637,
+        0.08946416812927212
+      ],
+      "mass_kg": 0.731,
+      "position_m": [
+        -1.0,
+        0.1,
+        0.895732084064636
+      ],
+      "yaw_rad": 0.11095889710063647,
+      "label_normal_local": [
+        0,
+        0,
+        -1
+      ],
+      "label_size_m": [
+        0.1016,
+        0.1524
+      ],
+      "label_transform_local": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          -1.2246467991473532e-16,
+          0.0
+        ],
+        [
+          -0.0,
+          1.2246467991473532e-16,
+          -1.0,
+          -0.04673208406463606
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "initial_label_face": "down",
+      "rigid_approximation": true
+    },
+    {
+      "id": "P004",
+      "prim_path": "/World/Parcels/P004",
+      "tracking_id": "HX000000420004",
+      "content": "charger",
+      "packaging": "padded_mailer",
+      "dimensions_m": [
+        0.19442918353265784,
+        0.16372983876434344,
+        0.04604901715247159
+      ],
+      "mass_kg": 0.224,
+      "position_m": [
+        -0.66,
+        0.02,
+        0.8740245085762358
+      ],
+      "yaw_rad": -0.07805833056838503,
+      "label_normal_local": [
+        0,
+        0,
+        -1
+      ],
+      "label_size_m": [
+        0.1016,
+        0.1524
+      ],
+      "label_transform_local": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          -1.2246467991473532e-16,
+          0.0
+        ],
+        [
+          -0.0,
+          1.2246467991473532e-16,
+          -1.0,
+          -0.025024508576235796
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "initial_label_face": "down",
+      "rigid_approximation": true
+    },
+    {
+      "id": "P005",
+      "prim_path": "/World/Parcels/P005",
+      "tracking_id": "HX000000420005",
+      "content": "tshirt",
+      "packaging": "poly_mailer",
+      "dimensions_m": [
+        0.3054045005601167,
+        0.24432360044809337,
+        0.05599082510268807
+      ],
+      "mass_kg": 0.257,
+      "position_m": [
+        -0.66,
+        0.29,
+        0.8789954125513441
+      ],
+      "yaw_rad": 0.10322868371312258,
+      "label_normal_local": [
+        0,
+        0,
+        1
+      ],
+      "label_size_m": [
+        0.1016,
+        0.1524
+      ],
+      "label_transform_local": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          1.0,
+          0.029995412551344032
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "initial_label_face": "up",
+      "rigid_approximation": true
+    },
+    {
+      "id": "P006",
+      "prim_path": "/World/Parcels/P006",
+      "tracking_id": "HX000000420006",
+      "content": "book",
+      "packaging": "padded_mailer",
+      "dimensions_m": [
+        0.2640944535011671,
+        0.19014800652084032,
+        0.04753700163021008
+      ],
+      "mass_kg": 0.713,
+      "position_m": [
+        -0.28,
+        0.26,
+        0.874768500815105
+      ],
+      "yaw_rad": -0.05506065617314463,
+      "label_normal_local": [
+        0,
+        0,
+        -1
+      ],
+      "label_size_m": [
+        0.1016,
+        0.1524
+      ],
+      "label_transform_local": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          -1.2246467991473532e-16,
+          0.0
+        ],
+        [
+          -0.0,
+          1.2246467991473532e-16,
+          -1.0,
+          -0.02576850081510504
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "initial_label_face": "down",
+      "rigid_approximation": true
+    },
+    {
+      "id": "test_parcel",
+      "packaging": "carton",
+      "dimensions_m": [
+        0.05,
+        0.07,
+        0.1
+      ],
+      "mass_kg": 0.1,
+      "contents": "Small boxed sample; rigid-body approximation",
+      "tracking_id": "HX1001",
+      "initial_label_face": "down",
+      "label_normal_local": [
+        0,
+        0,
+        1
+      ],
+      "position_m": [
+        -0.1,
+        -0.32,
+        0.902
+      ],
+      "yaw_rad": 0,
+      "label_transform_local": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0.0501
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "initial_quaternion_wxyz": [
+        0,
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "task_target": "test_parcel",
+  "base_position_m": [
+    -0.25,
+    -0.85,
+    0.046
+  ],
+  "description": "One shared workcell for index, MuJoCo and Harness; all seven parcels remain present."
+}

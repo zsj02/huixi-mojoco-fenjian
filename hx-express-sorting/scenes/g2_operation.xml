@@ -1,0 +1,732 @@
+<mujoco model="HX G2 shared sorting workstation">
+  <compiler angle="radian" meshdir="../assets/g2_description" />
+  <asset>
+    <mesh name="base_link_1" content_type="model/stl" file="robots/genie/g2/meshes/G2/convex/base_link_1.STL" />
+    <mesh name="base_link_2" content_type="model/stl" file="robots/genie/g2/meshes/G2/convex/base_link_2.STL" />
+    <mesh name="body_link2" content_type="model/stl" file="robots/genie/g2/meshes/G2/convex/body_link2.STL" />
+    <mesh name="body_link3" content_type="model/stl" file="robots/genie/g2/meshes/G2/convex/body_link3.STL" />
+    <mesh name="body_link4_1" content_type="model/stl" file="robots/genie/g2/meshes/G2/convex/body_link4_1.STL" />
+    <mesh name="body_link4_2" content_type="model/stl" file="robots/genie/g2/meshes/G2/convex/body_link4_2.STL" />
+    <mesh name="body_link4_3" content_type="model/stl" file="robots/genie/g2/meshes/G2/convex/body_link4_3.STL" />
+    <mesh name="body_link5" content_type="model/stl" file="robots/genie/g2/meshes/G2/convex/body_link5.STL" />
+    <mesh name="head_link3" content_type="model/stl" file="robots/genie/g2/meshes/G2/convex/head_link3.STL" />
+    <mesh name="arm_l_link1_fine_0" content_type="model/stl" file="robots/genie/g2/meshes/arm/crs/convex/arm_l_link1_fine_0.STL" />
+    <mesh name="arm_l_link2_fine_0" content_type="model/stl" file="robots/genie/g2/meshes/arm/crs/convex/arm_l_link2_fine_0.STL" />
+    <mesh name="arm_l_link3_fine_0" content_type="model/stl" file="robots/genie/g2/meshes/arm/crs/convex/arm_l_link3_fine_0.STL" />
+    <mesh name="arm_l_link4_fine_0" content_type="model/stl" file="robots/genie/g2/meshes/arm/crs/convex/arm_l_link4_fine_0.STL" />
+    <mesh name="arm_l_link5_fine_0" content_type="model/stl" file="robots/genie/g2/meshes/arm/crs/convex/arm_l_link5_fine_0.STL" />
+    <mesh name="arm_l_link6_fine_0" content_type="model/stl" file="robots/genie/g2/meshes/arm/crs/convex/arm_l_link6_fine_0.STL" />
+    <mesh name="arm_l_link7_fine_0" content_type="model/stl" file="robots/genie/g2/meshes/arm/crs/convex/arm_l_link7_fine_0.STL" />
+    <mesh name="arm_r_link1_fine_0" content_type="model/stl" file="robots/genie/g2/meshes/arm/crs/convex/arm_r_link1_fine_0.STL" />
+    <mesh name="arm_r_link2_fine_0" content_type="model/stl" file="robots/genie/g2/meshes/arm/crs/convex/arm_r_link2_fine_0.STL" />
+    <mesh name="arm_r_link3_fine_0" content_type="model/stl" file="robots/genie/g2/meshes/arm/crs/convex/arm_r_link3_fine_0.STL" />
+    <mesh name="arm_r_link4_fine_0" content_type="model/stl" file="robots/genie/g2/meshes/arm/crs/convex/arm_r_link4_fine_0.STL" />
+    <mesh name="arm_r_link5_fine_0" content_type="model/stl" file="robots/genie/g2/meshes/arm/crs/convex/arm_r_link5_fine_0.STL" />
+    <mesh name="arm_r_link6_fine_0" content_type="model/stl" file="robots/genie/g2/meshes/arm/crs/convex/arm_r_link6_fine_0.STL" />
+    <mesh name="arm_r_link7_fine_0" content_type="model/stl" file="robots/genie/g2/meshes/arm/crs/convex/arm_r_link7_fine_0.STL" />
+    <mesh name="camera_link" content_type="model/stl" file="robots/genie/g2/meshes/gripper/swiftpicker/camera_link.STL" />
+    <mesh name="base_link" content_type="model/stl" file="robots/genie/g2/meshes/gripper/swiftpicker/base_link.STL" />
+    <mesh name="left_inner_link" content_type="model/stl" file="robots/genie/g2/meshes/gripper/swiftpicker/left_inner_link.STL" />
+    <mesh name="left_outer_link" content_type="model/stl" file="robots/genie/g2/meshes/gripper/swiftpicker/left_outer_link.STL" />
+    <mesh name="left_support_link" content_type="model/stl" file="robots/genie/g2/meshes/gripper/swiftpicker/left_support_link.STL" />
+    <mesh name="right_inner_link" content_type="model/stl" file="robots/genie/g2/meshes/gripper/swiftpicker/right_inner_link.STL" />
+    <mesh name="right_outer_link" content_type="model/stl" file="robots/genie/g2/meshes/gripper/swiftpicker/right_outer_link.STL" />
+    <mesh name="right_support_link" content_type="model/stl" file="robots/genie/g2/meshes/gripper/swiftpicker/right_support_link.STL" />
+    <texture name="P001_label_texture" type="2d" file="labels/HX000000420001.png" />
+    <material name="P001_label_material" texture="P001_label_texture" texrepeat="1 1" texuniform="false" rgba="1 1 1 1" />
+    <texture name="P002_label_texture" type="2d" file="labels/HX000000420002.png" />
+    <material name="P002_label_material" texture="P002_label_texture" texrepeat="1 1" texuniform="false" rgba="1 1 1 1" />
+    <texture name="P003_label_texture" type="2d" file="labels/HX000000420003.png" />
+    <material name="P003_label_material" texture="P003_label_texture" texrepeat="1 1" texuniform="false" rgba="1 1 1 1" />
+    <texture name="P004_label_texture" type="2d" file="labels/HX000000420004.png" />
+    <material name="P004_label_material" texture="P004_label_texture" texrepeat="1 1" texuniform="false" rgba="1 1 1 1" />
+    <texture name="P005_label_texture" type="2d" file="labels/HX000000420005.png" />
+    <material name="P005_label_material" texture="P005_label_texture" texrepeat="1 1" texuniform="false" rgba="1 1 1 1" />
+    <texture name="P006_label_texture" type="2d" file="labels/HX000000420006.png" />
+    <material name="P006_label_material" texture="P006_label_texture" texrepeat="1 1" texuniform="false" rgba="1 1 1 1" />
+    <texture name="target_label_texture" type="2d" file="labels/HX1001.png" />
+    <material name="target_label_material" texture="target_label_texture" texrepeat="1 1" texuniform="false" rgba="1 1 1 1" />
+  </asset>
+  <worldbody>
+    <body name="g2_mount" pos="-0.25 -0.85 0.046" quat="0.7071067812 0 0 0.7071067812">
+      <body name="base_link">
+        <inertial pos="0 0 0.15" quat="0 0.707107 0 0.707107" mass="80" diaginertia="5.29894 3.50892 3.11997" />
+        <geom name="base_link_coarse_0" size="0.313366 0.0870454 0.162913" pos="0.0112473 -0.230945 0.162912" type="box" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+        <geom name="base_link_coarse_1" size="0.313337 0.0935742 0.162913" pos="0.0112773 0.234417 0.162912" type="box" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+        <geom name="base_link_coarse_2" size="0.312301 0.119351 0.0348391" pos="0.0123007 -0.0130711 0.114839" type="box" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+        <geom name="base_link_coarse_3" type="mesh" mesh="base_link_1" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+        <geom name="base_link_coarse_4" type="mesh" mesh="base_link_2" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+        <body name="body_link1" pos="0.102 0 0.144">
+          <inertial pos="0 0 0.175562" mass="10" diaginertia="0.259378 0.244269 0.0390951" />
+          <joint name="idx01_body_joint1" pos="0 0 0" axis="0 1 0" range="-1.0822 0.0001" actuatorfrcrange="-50 50" />
+          <geom name="Cylinder" size="0.089146 0.0766955" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+          <geom name="Cylinder.001" size="0.089146 0.0766955" pos="0 0 0.36" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+          <geom name="Cube" size="0.042797 0.088309 0.175644" pos="-0.024457 0 0.18" type="box" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+          <geom name="Cube.001" size="0.0562935 0.013531 0.120414" pos="-0.009824 0.075429 0.180136" type="box" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+          <geom name="Cube.002" size="0.0562935 0.013531 0.120414" pos="-0.009824 -0.075429 0.180136" type="box" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+          <body name="body_link2" pos="0 0 0.36">
+            <inertial pos="0 0 0.185408" mass="12.4" diaginertia="0.360854 0.252113 0.147625" />
+            <joint name="idx02_body_joint2" pos="0 0 0" axis="0 1 0" range="-0.0001 2.653" actuatorfrcrange="-50 50" />
+            <geom name="body_link2_convex_0" type="mesh" mesh="body_link2" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+            <body name="body_link3" pos="0 0 0.38">
+              <inertial pos="0 0 0" quat="0.5 0.5 -0.5 0.5" mass="7.3" diaginertia="0.0340642 0.0295826 0.0276827" />
+              <joint name="idx03_body_joint3" pos="0 0 0" axis="0 1 0" range="-1.907 1.039" actuatorfrcrange="-50 50" />
+              <geom name="body_link3_convex_0" type="mesh" mesh="body_link3" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+              <body name="body_link4">
+                <inertial pos="-0.0714498 0 0.0300405" quat="0 0.707107 0 0.707107" mass="6.25" diaginertia="0.117097 0.109769 0.00732821" />
+                <joint name="idx04_body_joint4" pos="0 0 0" axis="1 0 0" range="-0.4364 0.4364" actuatorfrcrange="-50 50" />
+                <geom name="body_link4_convex_1" type="mesh" mesh="body_link4_1" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                <geom name="body_link4_convex_2" type="mesh" mesh="body_link4_2" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                <geom name="body_link4_convex_3" type="mesh" mesh="body_link4_3" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                <body name="body_link5" pos="0 0 0.149">
+                  <inertial pos="-0.0244424 0 0.136945" mass="7.9" diaginertia="0.249907 0.235349 0.0715655" />
+                  <joint name="idx05_body_joint5" pos="0 0 0" axis="0 0 1" range="-3.0456 3.0456" actuatorfrcrange="-50 50" />
+                  <geom name="body_link5_convex_0" type="mesh" mesh="body_link5" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                  <body name="arm_base_link" pos="0 0 0.3085" quat="0.707107 -0.707107 0 0">
+                    <body name="arm_l_link1" pos="0 0 0.069">
+                      <inertial pos="1.875e-05 0.006003 0.1438" mass="2.0926" diaginertia="0.00524521 0.00455565 0.00237986" />
+                      <joint name="idx21_arm_l_joint1" pos="0 0 0" axis="0 0 1" range="-3.0718 3.0718" actuatorfrcrange="-108 108" frictionloss="1.0" damping="1" />
+                      <geom name="arm_l_link1_convex_0" type="mesh" mesh="arm_l_link1_fine_0" rgba="0.25 0.3 0.33 1" group="1" conaffinity="25" />
+                      <body name="arm_l_link2" pos="0 0 0.1745" quat="0.707105 0.707108 0 0">
+                        <inertial pos="-7.03e-06 0.05542 0.010995" quat="0.5 0.5 -0.5 0.5" mass="1.9432" diaginertia="0.00958569 0.00778924 0.00428622" />
+                        <joint name="idx22_arm_l_joint2" pos="0 0 0" axis="0 0 1" range="-2.0595 2.0595" actuatorfrcrange="-108 108" frictionloss="1.0" damping="1" />
+                        <geom name="arm_l_link2_convex_0" type="mesh" mesh="arm_l_link2_fine_0" rgba="0.25 0.3 0.33 1" group="1" conaffinity="25" />
+                        <body name="arm_l_link3" quat="0.707105 -0.707108 0 0">
+                          <inertial pos="0.0087411 0.0019043 0.23487" mass="1.6913" diaginertia="0.00610928 0.0057534 0.00165978" />
+                          <joint name="idx23_arm_l_joint3" pos="0 0 0" axis="0 0 1" range="-3.0718 3.0718" actuatorfrcrange="-35 35" frictionloss="0.5" damping="1" />
+                          <geom name="arm_l_link3_convex_0" type="mesh" mesh="arm_l_link3_fine_0" rgba="0.25 0.3 0.33 1" group="1" conaffinity="25" />
+                          <body name="arm_l_link4" pos="0.018 0 0.287" quat="0.707105 0.707108 0 0">
+                            <inertial pos="-0.0086935 0.045984 0.011135" quat="0.5 0.5 -0.5 0.5" mass="1.5332" diaginertia="0.0054013 0.00422288 0.00279916" />
+                            <joint name="idx24_arm_l_joint4" pos="0 0 0" axis="0 0 1" range="-2.4959 1.0123" actuatorfrcrange="-35 35" frictionloss="0.5" damping="1" />
+                            <geom name="arm_l_link4_convex_0" type="mesh" mesh="arm_l_link4_fine_0" rgba="0.25 0.3 0.33 1" group="1" conaffinity="25" />
+                            <body name="arm_l_link5" pos="-0.018 0 0" quat="0.707105 -0.707108 0 0">
+                              <inertial pos="-0.00036467 0.0001479 0.19902" mass="2.0095" diaginertia="0.0060028 0.00530075 0.00255015" />
+                              <joint name="idx25_arm_l_joint5" pos="0 0 0" axis="0 0 1" range="-3.0718 3.0718" actuatorfrcrange="-18 18" frictionloss="0.5" damping="1" />
+                              <geom name="arm_l_link5_convex_0" type="mesh" mesh="arm_l_link5_fine_0" rgba="0.25 0.3 0.33 1" group="1" conaffinity="25" />
+                              <body name="arm_l_link6" pos="0 0 0.314" quat="0.707105 0.707108 0 0">
+                                <inertial pos="-0.004911 0.00027206 -8.14e-05" mass="0.67002" diaginertia="0.000502625 0.000452202 0.00042586" />
+                                <joint name="idx26_arm_l_joint6" pos="0 0 0" axis="0 0 1" range="-1.0123 1.0123" actuatorfrcrange="-18 18" frictionloss="0.2" damping="1" />
+                                <geom name="arm_l_link6_convex_0" type="mesh" mesh="arm_l_link6_fine_0" rgba="0.25 0.3 0.33 1" group="1" conaffinity="25" />
+                                <body name="arm_l_link7" quat="0.499998 0.5 0.500002 0.5">
+                                  <inertial pos="0.0451337 4.672e-05 0.00607482" quat="0.5 0.5 0.5 0.5" mass="0.31657" diaginertia="0.000847986 0.000640472 0.000422024" />
+                                  <joint name="idx27_arm_l_joint7" pos="0 0 0" axis="0 0 1" range="-1.5359 1.5359" actuatorfrcrange="-18 18" frictionloss="0.2" damping="1" />
+                                  <geom name="arm_l_link7_convex_0" type="mesh" mesh="arm_l_link7_fine_0" rgba="0.25 0.3 0.33 1" group="1" conaffinity="25" />
+                                  <body name="arm_l_end_link" pos="0.095 0 0" quat="-2.59734e-06 0.707105 2.59735e-06 0.707108">
+                                    <body name="gripper_l_camera_link" quat="0.707107 0 0 0.707107">
+                                      <geom name="gripper_l_camera_link_collision_0" type="mesh" mesh="camera_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                    </body>
+                                    <body name="gripper_l_base_link" pos="0 0 0.007" quat="0.707107 0 0 0.707107">
+                                      <inertial pos="3.84872e-06 -4.41448e-05 0.0553868" mass="0.953456" diaginertia="0.00215592 0.00203033 0.000729104" />
+                                      <geom name="gripper_l_base_link_visual_0" type="mesh" mesh="base_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                      <body name="gripper_l_left_inner_link" pos="0.016 0 0.121" quat="0.707107 0.707107 0 0">
+                                        <inertial pos="0.0202604 0.0187578 0" quat="0.5 0.5 0.5 0.5" mass="0.0309053" diaginertia="1.03273e-05 9.20486e-06 1.7494e-06" />
+                                        <joint name="idx31_gripper_l_inner_joint1" pos="0 0 0" axis="0 0 -1" range="-0.91 0" actuatorfrcrange="-50 50" damping="0.5" frictionloss="0.01" />
+                                        <geom name="gripper_l_left_inner_link_visual_0" type="mesh" mesh="left_inner_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                      </body>
+                                      <body name="gripper_l_left_outer_link" pos="0.030141 0 0.10415" quat="0.707107 0.707107 0 0">
+                                        <inertial pos="0.0202604 0.0187578 0" quat="0.5 0.5 0.5 0.5" mass="0.0309053" diaginertia="1.03273e-05 9.20486e-06 1.7494e-06" />
+                                        <joint name="idx32_gripper_l_outer_joint1" pos="0 0 0" axis="0 0 -1" range="-0.91 0" actuatorfrcrange="-10 10" damping="0.5" frictionloss="0.01" />
+                                        <geom name="gripper_l_left_outer_link_visual_0" type="mesh" mesh="left_outer_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                        <body name="gripper_l_left_support_link" pos="0.040359 0.037365 0">
+                                          <inertial pos="-0.0177926 0.0354309 -3.45319e-05" quat="0.5 0.5 -0.5 0.5" mass="0.0828693" diaginertia="2.97711e-05 2.80369e-05 2e-05" />
+                                          <joint name="idx33_gripper_l_left_support_joint" pos="0 0 0" axis="0 0 -1" range="0 0.91" actuatorfrcrange="-10 10" damping="0.5" frictionloss="0.01" />
+                                          <geom name="gripper_l_left_support_link_visual_0" type="mesh" mesh="left_support_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                        </body>
+                                      </body>
+                                      <body name="gripper_l_right_inner_link" pos="-0.016 0 0.121" quat="0 0 0.707107 0.707107">
+                                        <inertial pos="0.0202604 0.0187578 0" quat="0.5 0.5 0.5 0.5" mass="0.0309053" diaginertia="1.03273e-05 9.20486e-06 1.7494e-06" />
+                                        <joint name="idx34_gripper_l_inner_joint2" pos="0 0 0" axis="0 0 1" range="0 0.91" actuatorfrcrange="-10 10" damping="0.5" frictionloss="0.01" />
+                                        <geom name="gripper_l_right_inner_link_visual_0" type="mesh" mesh="right_inner_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                      </body>
+                                      <body name="gripper_l_right_outer_link" pos="-0.030141 0 0.10415" quat="0 0 0.707107 0.707107">
+                                        <inertial pos="0.0202604 0.0187578 0" quat="0.5 0.5 0.5 0.5" mass="0.0309053" diaginertia="1.03273e-05 9.20486e-06 1.7494e-06" />
+                                        <joint name="idx35_gripper_l_outer_joint2" pos="0 0 0" axis="0 0 1" range="0 0.91" actuatorfrcrange="-10 10" damping="0.5" frictionloss="0.01" />
+                                        <geom name="gripper_l_right_outer_link_visual_0" type="mesh" mesh="right_outer_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                        <body name="gripper_l_right_support_link" pos="0.040359 0.037365 0">
+                                          <inertial pos="-0.0177926 0.0354309 -2.81888e-08" quat="0.5 0.5 -0.5 0.5" mass="0.0828694" diaginertia="2.97711e-05 2.80369e-05 2e-05" />
+                                          <joint name="idx36_gripper_l_right_support_joint" pos="0 0 0" axis="0 0 -1" range="0 0.91" actuatorfrcrange="-10 10" damping="0.5" frictionloss="0.01" />
+                                          <geom name="gripper_l_right_support_link_visual_0" type="mesh" mesh="right_support_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                        </body>
+                                      </body>
+                                      <site name="l_tcp" pos="0 0 0.19" size="0.008" rgba="0 1 0 1" />
+                                    </body>
+                                  </body>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                    <body name="arm_r_link1" pos="0 0 -0.069" quat="0 1 0 0">
+                      <inertial pos="1.875e-05 0.006003 0.1438" mass="2.0926" diaginertia="0.00524521 0.00455565 0.00237986" />
+                      <joint name="idx61_arm_r_joint1" pos="0 0 0" axis="0 0 1" range="-3.0718 3.0718" actuatorfrcrange="-108 108" frictionloss="1.0" damping="1" />
+                      <geom name="arm_r_link1_convex_0" type="mesh" mesh="arm_r_link1_fine_0" rgba="0.25 0.3 0.33 1" group="1" conaffinity="25" />
+                      <body name="arm_r_link2" pos="0 0 0.1745" quat="0.707107 0.707107 0 0">
+                        <inertial pos="-7.03e-06 0.05542 0.010995" quat="0.5 0.5 -0.5 0.5" mass="1.9432" diaginertia="0.00958569 0.00778924 0.00428622" />
+                        <joint name="idx62_arm_r_joint2" pos="0 0 0" axis="0 0 1" range="-2.0595 2.0595" actuatorfrcrange="-108 108" frictionloss="1.0" damping="1" />
+                        <geom name="arm_r_link2_convex_0" type="mesh" mesh="arm_r_link2_fine_0" rgba="0.25 0.3 0.33 1" group="1" conaffinity="25" />
+                        <body name="arm_r_link3" quat="0.707107 -0.707107 0 0">
+                          <inertial pos="0.0087411 0.0019043 0.23487" mass="1.6913" diaginertia="0.00610928 0.0057534 0.00165978" />
+                          <joint name="idx63_arm_r_joint3" pos="0 0 0" axis="0 0 1" range="-3.0718 3.0718" actuatorfrcrange="-35 35" frictionloss="0.5" damping="1" />
+                          <geom name="arm_r_link3_convex_0" type="mesh" mesh="arm_r_link3_fine_0" rgba="0.25 0.3 0.33 1" group="1" conaffinity="25" />
+                          <body name="arm_r_link4" pos="0.018 0 0.287" quat="0.707107 0.707107 0 0">
+                            <inertial pos="-0.0086935 0.045984 0.011135" quat="0.5 0.5 -0.5 0.5" mass="1.5332" diaginertia="0.0054013 0.00422288 0.00279916" />
+                            <joint name="idx64_arm_r_joint4" pos="0 0 0" axis="0 0 1" range="-2.4959 1.0123" actuatorfrcrange="-35 35" frictionloss="0.5" damping="1" />
+                            <geom name="arm_r_link4_convex_0" type="mesh" mesh="arm_r_link4_fine_0" rgba="0.25 0.3 0.33 1" group="1" conaffinity="25" />
+                            <body name="arm_r_link5" pos="-0.018 0 0" quat="0.707107 -0.707107 0 0">
+                              <inertial pos="0.00036663 -0.00041429 0.198891" mass="1.9854" diaginertia="0.00592806 0.00523648 0.00251751" />
+                              <joint name="idx65_arm_r_joint5" pos="0 0 0" axis="0 0 1" range="-3.0718 3.0718" actuatorfrcrange="-18 18" frictionloss="0.5" damping="1" />
+                              <geom name="arm_r_link5_convex_0" type="mesh" mesh="arm_r_link5_fine_0" rgba="0.25 0.3 0.33 1" group="1" conaffinity="25" />
+                              <body name="arm_r_link6" pos="0 0 0.314" quat="0.707107 0.707107 0 0">
+                                <inertial pos="-0.00458177 -0.00027029 9.098e-05" mass="0.645948" diaginertia="0.000484494 0.00043524 0.000409886" />
+                                <joint name="idx66_arm_r_joint6" pos="0 0 0" axis="0 0 1" range="-1.0123 1.0123" actuatorfrcrange="-18 18" frictionloss="0.2" damping="1" />
+                                <geom name="arm_r_link6_convex_0" type="mesh" mesh="arm_r_link6_fine_0" rgba="0.25 0.3 0.33 1" group="1" conaffinity="25" />
+                                <body name="arm_r_link7" quat="0.5 0.5 0.5 0.5">
+                                  <inertial pos="0.0451337 4.672e-05 0.00607482" quat="0.5 0.5 0.5 0.5" mass="0.31658" diaginertia="0.000848013 0.000640492 0.000422037" />
+                                  <joint name="idx67_arm_r_joint7" pos="0 0 0" axis="0 0 1" range="-1.5359 1.5359" actuatorfrcrange="-18 18" frictionloss="0.2" damping="1" />
+                                  <geom name="arm_r_link7_convex_0" type="mesh" mesh="arm_r_link7_fine_0" rgba="0.25 0.3 0.33 1" group="1" conaffinity="25" />
+                                  <body name="arm_r_end_link" pos="0.095 0 0" quat="0 0.707107 0 0.707107">
+                                    <body name="gripper_r_camera_link" quat="0.707107 0 0 0.707107">
+                                      <geom name="gripper_r_camera_link_collision_0" type="mesh" mesh="camera_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                    </body>
+                                    <body name="gripper_r_base_link" pos="0 0 0.007" quat="0.707107 0 0 0.707107">
+                                      <inertial pos="3.84872e-06 -4.41448e-05 0.0553868" mass="0.953456" diaginertia="0.00215592 0.00203033 0.000729104" />
+                                      <geom name="gripper_r_base_link_visual_0" type="mesh" mesh="base_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                      <body name="gripper_r_left_inner_link" pos="0.016 0 0.121" quat="0.707107 0.707107 0 0">
+                                        <inertial pos="0.0202604 0.0187578 0" quat="0.5 0.5 0.5 0.5" mass="0.0309053" diaginertia="1.03273e-05 9.20486e-06 1.7494e-06" />
+                                        <joint name="idx71_gripper_r_inner_joint1" pos="0 0 0" axis="0 0 -1" range="-0.91 0" actuatorfrcrange="-50 50" damping="0.5" frictionloss="0.01" />
+                                        <geom name="gripper_r_left_inner_link_visual_0" type="mesh" mesh="left_inner_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                      </body>
+                                      <body name="gripper_r_left_outer_link" pos="0.030141 0 0.10415" quat="0.707107 0.707107 0 0">
+                                        <inertial pos="0.0202604 0.0187578 0" quat="0.5 0.5 0.5 0.5" mass="0.0309053" diaginertia="1.03273e-05 9.20486e-06 1.7494e-06" />
+                                        <joint name="idx72_gripper_r_outer_joint1" pos="0 0 0" axis="0 0 -1" range="-0.91 0" actuatorfrcrange="-10 10" damping="0.5" frictionloss="0.01" />
+                                        <geom name="gripper_r_left_outer_link_visual_0" type="mesh" mesh="left_outer_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                        <body name="gripper_r_left_support_link" pos="0.040359 0.037365 0">
+                                          <inertial pos="-0.0177926 0.0354309 -3.45319e-05" quat="0.5 0.5 -0.5 0.5" mass="0.0828693" diaginertia="2.97711e-05 2.80369e-05 2e-05" />
+                                          <joint name="idx73_gripper_r_left_support_joint" pos="0 0 0" axis="0 0 -1" range="0 0.91" actuatorfrcrange="-10 10" damping="0.5" frictionloss="0.01" />
+                                          <geom name="gripper_r_left_support_link_visual_0" type="mesh" mesh="left_support_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                        </body>
+                                      </body>
+                                      <body name="gripper_r_right_inner_link" pos="-0.016 0 0.121" quat="0 0 0.707107 0.707107">
+                                        <inertial pos="0.0202604 0.0187578 0" quat="0.5 0.5 0.5 0.5" mass="0.0309053" diaginertia="1.03273e-05 9.20486e-06 1.7494e-06" />
+                                        <joint name="idx74_gripper_r_inner_joint2" pos="0 0 0" axis="0 0 1" range="0 0.91" actuatorfrcrange="-10 10" damping="0.5" frictionloss="0.01" />
+                                        <geom name="gripper_r_right_inner_link_visual_0" type="mesh" mesh="right_inner_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                      </body>
+                                      <body name="gripper_r_right_outer_link" pos="-0.030141 0 0.10415" quat="0 0 0.707107 0.707107">
+                                        <inertial pos="0.0202604 0.0187578 0" quat="0.5 0.5 0.5 0.5" mass="0.0309053" diaginertia="1.03273e-05 9.20486e-06 1.7494e-06" />
+                                        <joint name="idx75_gripper_r_outer_joint2" pos="0 0 0" axis="0 0 1" range="0 0.91" actuatorfrcrange="-10 10" damping="0.5" frictionloss="0.01" />
+                                        <geom name="gripper_r_right_outer_link_visual_0" type="mesh" mesh="right_outer_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                        <body name="gripper_r_right_support_link" pos="0.040359 0.037365 0">
+                                          <inertial pos="-0.0177926 0.0354309 -2.81888e-08" quat="0.5 0.5 -0.5 0.5" mass="0.0828694" diaginertia="2.97711e-05 2.80369e-05 2e-05" />
+                                          <joint name="idx76_gripper_r_right_support_joint" pos="0 0 0" axis="0 0 -1" range="0 0.91" actuatorfrcrange="-10 10" damping="0.5" frictionloss="0.01" />
+                                          <geom name="gripper_r_right_support_link_visual_0" type="mesh" mesh="right_support_link" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                                        </body>
+                                      </body>
+                                      <site name="r_tcp" pos="0 0 0.19" size="0.008" rgba="0 1 0 1" />
+                                    </body>
+                                  </body>
+                                </body>
+                              </body>
+                            </body>
+                          </body>
+                        </body>
+                      </body>
+                    </body>
+                  </body>
+                  <body name="head_base_link" pos="-0.013 0 0.496" />
+                  <body name="head_link1" pos="-0.013 0 0.496">
+                    <inertial pos="0 0 -0.0288855" mass="0.245638" diaginertia="0.000900237 0.000851002 4.92352e-05" />
+                    <joint name="idx11_head_joint1" pos="0 0 0" axis="0 0 1" range="-0.781 0.781" actuatorfrcrange="-50 50" />
+                    <body name="head_link2" pos="0.03335 0 0.07">
+                      <inertial pos="-0.0363591 0 0" quat="0.5 0.5 0.5 0.5" mass="0.0944987" diaginertia="5.3548e-05 5.04287e-05 3.51098e-05" />
+                      <joint name="idx12_head_joint2" pos="0 0 0" axis="1 0 0" range="-0.151 0.151" actuatorfrcrange="-50 50" />
+                      <body name="head_link3" pos="-0.03035 0 0">
+                        <inertial pos="-0.00327293 0 0.0163618" mass="2.5" diaginertia="0.0175895 0.0142253 0.0106342" />
+                        <joint name="idx13_head_joint3" pos="0 0 0" axis="0 1 0" range="-0.0181 0.5231" actuatorfrcrange="-50 50" />
+                        <geom name="head_link3_convex_0" type="mesh" mesh="head_link3" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+                      </body>
+                    </body>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+        <body name="chassis_link">
+          <body name="chassis_lwheel_front_link1" pos="0.23 0.218 0.16675">
+            <inertial pos="4.8347e-05 -0.021386 -0.055149" mass="0.59301" diaginertia="0.00116226 0.00109456 0.000271251" />
+            <joint name="idx111_chassis_lwheel_front_joint1" pos="0 0 0" axis="0 0 1" range="-2.97 2.97" actuatorfrcrange="-15 15" />
+            <body name="chassis_lwheel_front_link2" pos="0 -5e-05 -0.13675">
+              <inertial pos="-2.3442e-06 -0.0013086 1.0892e-05" quat="0.5 0.5 0.5 0.5" mass="3.6283" diaginertia="0.00828771 0.00571362 0.00538079" />
+              <joint name="idx112_chassis_lwheel_front_joint2" pos="0 0 0" axis="0 1 0" actuatorfrcrange="-8 8" />
+              <geom name="chassis_lwheel_front_link2_cylinder" size="0.07 0.02" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+            </body>
+          </body>
+          <body name="chassis_rwheel_front_link1" pos="0.23 -0.218 0.16675">
+            <inertial pos="-4.8347e-05 0.021386 -0.055149" mass="0.59301" diaginertia="0.00116226 0.00109456 0.000271251" />
+            <joint name="idx131_chassis_rwheel_front_joint1" pos="0 0 0" axis="0 0 1" range="-2.97 2.97" actuatorfrcrange="-15 15" />
+            <body name="chassis_rwheel_front_link2" pos="0 5e-05 -0.13675">
+              <inertial pos="2.3442e-06 0.0013086 1.0892e-05" quat="0.5 0.5 0.5 0.5" mass="3.6283" diaginertia="0.00828771 0.00571362 0.00538079" />
+              <joint name="idx132_chassis_rwheel_front_joint2" pos="0 0 0" axis="0 1 0" actuatorfrcrange="-8 8" />
+              <geom name="chassis_rwheel_front_link2_cylinder" size="0.07 0.02" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+            </body>
+          </body>
+          <body name="chassis_rwheel_rear_link1" pos="-0.23 -0.218 0.16675">
+            <inertial pos="-4.8347e-05 0.021386 -0.055149" mass="0.59301" diaginertia="0.00116226 0.00109456 0.000271251" />
+            <joint name="idx141_chassis_rwheel_rear_joint1" pos="0 0 0" axis="0 0 1" range="-2.97 2.97" actuatorfrcrange="-15 15" />
+            <body name="chassis_rwheel_rear_link2" pos="0 5e-05 -0.13675">
+              <inertial pos="2.3442e-06 0.0013086 1.0892e-05" quat="0.5 0.5 0.5 0.5" mass="3.6283" diaginertia="0.00828771 0.00571362 0.00538079" />
+              <joint name="idx142_chassis_rwheel_rear_joint2" pos="0 0 0" axis="0 1 0" actuatorfrcrange="-8 8" />
+              <geom name="chassis_rwheel_rear_link2_cylinder" size="0.07 0.02" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+            </body>
+          </body>
+          <body name="chassis_lwheel_rear_link1" pos="-0.23 0.218 0.16675">
+            <inertial pos="4.8347e-05 -0.021386 -0.055149" mass="0.59301" diaginertia="0.00116226 0.00109456 0.000271251" />
+            <joint name="idx121_chassis_lwheel_rear_joint1" pos="0 0 0" axis="0 0 1" range="-2.97 2.97" actuatorfrcrange="-15 15" />
+            <body name="chassis_lwheel_rear_link2" pos="0 -5e-05 -0.13675">
+              <inertial pos="-2.3442e-06 -0.0013086 1.0892e-05" quat="0.5 0.5 0.5 0.5" mass="3.6283" diaginertia="0.00828771 0.00571362 0.00538079" />
+              <joint name="idx122_chassis_lwheel_rear_joint2" pos="0 0 0" axis="0 1 0" actuatorfrcrange="-8 8" />
+              <geom name="chassis_lwheel_rear_link2_cylinder" size="0.07 0.02" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0.78 0.82 0.84 1" group="1" conaffinity="25" />
+            </body>
+          </body>
+        </body>
+      </body>
+      <freejoint name="g2_mobile_base" />
+    </body>
+    <light pos="0 -2 5" dir="0 0 -1" diffuse=".8 .8 .8" />
+    <camera name="overview" pos="4 -6 4" xyaxes=".85 .53 0 -.23 .36 .9" />
+    <geom name="Floor" type="box" size="4 2.5 0.04" pos="1 0 -0.04" quat="1 0 0 0" rgba="0.17 0.2 0.22 1" group="0" />
+    <geom name="Infeed_Tabletop" type="box" size="0.7 0.475 0.025" pos="-0.55 0 0.825" quat="1 0 0 0" rgba="0.66 0.7 0.69 1" group="0" />
+    <geom name="Infeed_Leg00" type="box" size="0.0275 0.0275 0.4" pos="-1.16 -0.39 0.4" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Infeed_Leg01" type="box" size="0.0275 0.0275 0.4" pos="-1.16 0.39 0.4" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Infeed_Leg10" type="box" size="0.0275 0.0275 0.4" pos="0.06 -0.39 0.4" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Infeed_Leg11" type="box" size="0.0275 0.0275 0.4" pos="0.06 0.39 0.4" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Infeed_Brace" type="box" size="0.64 0.0175 0.02" pos="-0.55 0.39 0.3" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Conveyor_Belt" type="box" size="1.5 .34 .020" pos="1.65 0 .820" quat="1 0 0 0" rgba="0.09 0.13 0.16 1" group="0" contype="0" conaffinity="0" />
+    <geom name="Conveyor_FrameL" type="box" size="1.55 0.035 0.065" pos="1.65 -0.38 0.78" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Conveyor_GuideL" type="box" size="1.22 .0125 .0175" pos="1.97 -.38 .89" quat="1 0 0 0" rgba="0.05 0.32 0.42 1" group="0" />
+    <geom name="Conveyor_LegL0" type="box" size="0.0325 0.0325 0.36" pos="0.3 -0.38 0.36" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Conveyor_LegL1" type="box" size="0.0325 0.0325 0.36" pos="1.65 -0.38 0.36" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Conveyor_LegL2" type="box" size="0.0325 0.0325 0.36" pos="3 -0.38 0.36" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Conveyor_FrameR" type="box" size="1.55 0.035 0.065" pos="1.65 0.38 0.78" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Conveyor_GuideR" type="box" size="1.54 0.0125 0.0175" pos="1.65 0.38 0.89" quat="1 0 0 0" rgba="0.05 0.32 0.42 1" group="0" />
+    <geom name="Conveyor_LegR0" type="box" size="0.0325 0.0325 0.36" pos="0.3 0.38 0.36" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Conveyor_LegR1" type="box" size="0.0325 0.0325 0.36" pos="1.65 0.38 0.36" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Conveyor_LegR2" type="box" size="0.0325 0.0325 0.36" pos="3 0.38 0.36" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Conveyor_Roller0" type="cylinder" size="0.055 0.36" pos="0.15 0 0.79" quat="0.7071067812 0.7071067812 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Conveyor_Roller1" type="cylinder" size="0.055 0.36" pos="3.15 0 0.79" quat="0.7071067812 0.7071067812 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Conveyor_Motor" type="box" size="0.12 0.09 0.11" pos="2.85 0.49 0.66" quat="1 0 0 0" rgba="0.05 0.32 0.42 1" group="0" />
+    <geom name="Cart_ReceivingTray" type="box" size="0.55 0.45 0.0175" pos="3.75 0 .8325" quat="1 0 0 0" rgba="0.1 0.39 0.45 1" group="0" />
+    <geom name="Cart_LowerShelf" type="box" size="0.55 0.45 0.02" pos="3.75 0 0.22" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Cart_Bridge" type="box" size="0.045 0.33 0.006" pos="3.18 0 .844" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Cart_Post00" type="box" size="0.0175 0.0175 0.4" pos="3.26 -0.39 0.55" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Cart_Wheel00" type="cylinder" size="0.085 0.025" pos="3.26 -0.39 0.085" quat="0.7071067812 0.7071067812 0 0" rgba="0.04 0.05 0.06 1" group="0" />
+    <geom name="Cart_Fork00" type="box" size="0.03 0.04 0.04" pos="3.26 -0.39 0.16" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Cart_Post01" type="box" size="0.0175 0.0175 0.4" pos="3.26 0.39 0.55" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Cart_Wheel01" type="cylinder" size="0.085 0.025" pos="3.26 0.39 0.085" quat="0.7071067812 0.7071067812 0 0" rgba="0.04 0.05 0.06 1" group="0" />
+    <geom name="Cart_Fork01" type="box" size="0.03 0.04 0.04" pos="3.26 0.39 0.16" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Cart_Post10" type="box" size="0.0175 0.0175 0.4" pos="4.24 -0.39 0.55" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Cart_Wheel10" type="cylinder" size="0.085 0.025" pos="4.24 -0.39 0.085" quat="0.7071067812 0.7071067812 0 0" rgba="0.04 0.05 0.06 1" group="0" />
+    <geom name="Cart_Fork10" type="box" size="0.03 0.04 0.04" pos="4.24 -0.39 0.16" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Cart_Post11" type="box" size="0.0175 0.0175 0.4" pos="4.24 0.39 0.55" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Cart_Wheel11" type="cylinder" size="0.085 0.025" pos="4.24 0.39 0.085" quat="0.7071067812 0.7071067812 0 0" rgba="0.04 0.05 0.06 1" group="0" />
+    <geom name="Cart_Fork11" type="box" size="0.03 0.04 0.04" pos="4.24 0.39 0.16" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Cart_Side0" type="box" size="0.55 0.0125 0.065" pos="3.75 -0.44 0.9" quat="1 0 0 0" rgba="0.05 0.32 0.42 1" group="0" />
+    <geom name="Cart_Side1" type="box" size="0.55 0.0125 0.065" pos="3.75 0.44 0.9" quat="1 0 0 0" rgba="0.05 0.32 0.42 1" group="0" />
+    <geom name="Cart_EndStop" type="box" size="0.0125 0.45 0.065" pos="4.29 0 0.9" quat="1 0 0 0" rgba="0.05 0.32 0.42 1" group="0" />
+    <geom name="Cart_Handle" type="box" size="0.015 0.41 0.0175" pos="4.24 0 1.1" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Cart_HandlePost0" type="box" size="0.015 0.015 0.135" pos="4.24 -0.39 0.97" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Cart_HandlePost1" type="box" size="0.015 0.015 0.135" pos="4.24 0.39 0.97" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Sensors_Mast" type="box" size="0.0225 0.0225 1.175" pos="0.05 0.7 1.175" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Sensors_Arm" type="box" size="0.0225 0.375 0.0175" pos="0.05 0.35 2.33" quat="1 0 0 0" rgba="0.57 0.64 0.68 1" group="0" />
+    <geom name="Sensors_Housing" type="box" size="0.065 0.045 0.03" pos="0.05 0 2.29" quat="1 0 0 0" rgba="0.09 0.13 0.16 1" group="0" />
+    <body name="P001" pos="-1.0 -0.25 0.9226578914440986" quat="0.9980890785 0 0 0.06179151602">
+      <freejoint name="P001_free" />
+      <geom name="P001_collision" type="box" size="0.1740263078 0.1177236788 0.07165789144" mass="0.873" rgba=".65 .43 .23 1" group="2" conaffinity="9" />
+      <geom name="P001_label" type="box" size="0.0508 0.0762 0.0001" pos="0 0 0.07365789144" quat="1 0 0 0" material="P001_label_material" contype="0" conaffinity="0" mass="0" group="3" />
+    </body>
+    <body name="P002" pos="-0.66 -0.25 0.9438203087814958" quat="0.9988315971 0 0 -0.04832639738">
+      <freejoint name="P002_free" />
+      <geom name="P002_collision" type="box" size="0.1082903602 0.0979769926 0.09282030878" mass="0.55" rgba=".65 .43 .23 1" group="2" conaffinity="9" />
+      <geom name="P002_label" type="box" size="0.0762 0.0508 0.0001" pos="0 -0.0999769926 0" quat="0.7071067812 0.7071067812 0 0" material="P002_label_material" contype="0" conaffinity="0" mass="0" group="3" />
+    </body>
+    <body name="P003" pos="-1.0 0.1 0.895732084064636" quat="0.9984614101 0 0 0.05545099226">
+      <freejoint name="P003_free" />
+      <geom name="P003_collision" type="box" size="0.1739581047 0.1341962522 0.04473208406" mass="0.731" rgba=".65 .43 .23 1" group="2" conaffinity="9" />
+      <geom name="P003_label" type="box" size="0.0508 0.0762 0.0001" pos="0 0 -0.04673208406" quat="6.123233996e-17 1 0 0" material="P003_label_material" contype="0" conaffinity="0" mass="0" group="3" />
+    </body>
+    <body name="P004" pos="-0.66 0.02 0.8740245085762358" quat="0.9992384588 0 0 -0.03901925734">
+      <freejoint name="P004_free" />
+      <geom name="P004_collision" type="box" size="0.09721459177 0.08186491938 0.02302450858" mass="0.224" rgba=".65 .43 .23 1" group="2" conaffinity="9" />
+      <geom name="P004_label" type="box" size="0.0508 0.0762 0.0001" pos="0 0 -0.02502450858" quat="6.123233996e-17 1 0 0" material="P004_label_material" contype="0" conaffinity="0" mass="0" group="3" />
+    </body>
+    <body name="P005" pos="-0.66 0.29 0.8789954125513441" quat="0.9986682755 0 0 0.05159142779">
+      <freejoint name="P005_free" />
+      <geom name="P005_collision" type="box" size="0.1527022503 0.1221618002 0.02799541255" mass="0.257" rgba=".65 .43 .23 1" group="2" conaffinity="9" />
+      <geom name="P005_label" type="box" size="0.0508 0.0762 0.0001" pos="0 0 0.02999541255" quat="1 0 0 0" material="P005_label_material" contype="0" conaffinity="0" mass="0" group="3" />
+    </body>
+    <body name="P006" pos="-0.28 0.26 0.874768500815105" quat="0.9996210645 0 0 -0.02752685059">
+      <freejoint name="P006_free" />
+      <geom name="P006_collision" type="box" size="0.1320472268 0.09507400326 0.02376850082" mass="0.713" rgba=".65 .43 .23 1" group="2" conaffinity="9" />
+      <geom name="P006_label" type="box" size="0.0508 0.0762 0.0001" pos="0 0 -0.02576850082" quat="6.123233996e-17 1 0 0" material="P006_label_material" contype="0" conaffinity="0" mass="0" group="3" />
+    </body>
+    <body name="test_parcel" pos="-.1 -.32 .902" quat="0 1 0 0">
+      <freejoint name="test_parcel_free" />
+      <geom name="test_parcel_geom" type="box" size=".025 .035 .05" mass=".1" rgba=".65 .43 .23 1" friction="1 .02 .002" group="2" conaffinity="9" />
+      <site name="test_label" pos="0 0 .0502" size=".015 .015 .001" type="box" rgba="0 0 0 0" />
+      <geom name="test_parcel_label" type="box" size=".020 .030 .0001" pos="0 0 .0501" material="target_label_material" contype="0" conaffinity="0" mass="0" group="3" />
+    </body>
+    <camera name="workspace" pos=".15 -.20 2.6" xyaxes="1 0 0 0 1 0" fovy="50" />
+    <camera name="inspection" pos=".28 -.22 1.5" xyaxes="1 0 0 0 1 0" fovy="16" />
+    <body name="belt_slat_00" pos="0.20000 0 .8425">
+      <joint name="belt_slide_00" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_00" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".12 .17 .20 1" />
+    </body>
+    <body name="belt_slat_01" pos="0.30000 0 .8425">
+      <joint name="belt_slide_01" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_01" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".09 .13 .16 1" />
+    </body>
+    <body name="belt_slat_02" pos="0.40000 0 .8425">
+      <joint name="belt_slide_02" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_02" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".12 .17 .20 1" />
+    </body>
+    <body name="belt_slat_03" pos="0.50000 0 .8425">
+      <joint name="belt_slide_03" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_03" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".09 .13 .16 1" />
+    </body>
+    <body name="belt_slat_04" pos="0.60000 0 .8425">
+      <joint name="belt_slide_04" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_04" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".12 .17 .20 1" />
+    </body>
+    <body name="belt_slat_05" pos="0.70000 0 .8425">
+      <joint name="belt_slide_05" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_05" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".09 .13 .16 1" />
+    </body>
+    <body name="belt_slat_06" pos="0.80000 0 .8425">
+      <joint name="belt_slide_06" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_06" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".12 .17 .20 1" />
+    </body>
+    <body name="belt_slat_07" pos="0.90000 0 .8425">
+      <joint name="belt_slide_07" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_07" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".09 .13 .16 1" />
+    </body>
+    <body name="belt_slat_08" pos="1.00000 0 .8425">
+      <joint name="belt_slide_08" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_08" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".12 .17 .20 1" />
+    </body>
+    <body name="belt_slat_09" pos="1.10000 0 .8425">
+      <joint name="belt_slide_09" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_09" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".09 .13 .16 1" />
+    </body>
+    <body name="belt_slat_10" pos="1.20000 0 .8425">
+      <joint name="belt_slide_10" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_10" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".12 .17 .20 1" />
+    </body>
+    <body name="belt_slat_11" pos="1.30000 0 .8425">
+      <joint name="belt_slide_11" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_11" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".09 .13 .16 1" />
+    </body>
+    <body name="belt_slat_12" pos="1.40000 0 .8425">
+      <joint name="belt_slide_12" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_12" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".12 .17 .20 1" />
+    </body>
+    <body name="belt_slat_13" pos="1.50000 0 .8425">
+      <joint name="belt_slide_13" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_13" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".09 .13 .16 1" />
+    </body>
+    <body name="belt_slat_14" pos="1.60000 0 .8425">
+      <joint name="belt_slide_14" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_14" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".12 .17 .20 1" />
+    </body>
+    <body name="belt_slat_15" pos="1.70000 0 .8425">
+      <joint name="belt_slide_15" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_15" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".09 .13 .16 1" />
+    </body>
+    <body name="belt_slat_16" pos="1.80000 0 .8425">
+      <joint name="belt_slide_16" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_16" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".12 .17 .20 1" />
+    </body>
+    <body name="belt_slat_17" pos="1.90000 0 .8425">
+      <joint name="belt_slide_17" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_17" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".09 .13 .16 1" />
+    </body>
+    <body name="belt_slat_18" pos="2.00000 0 .8425">
+      <joint name="belt_slide_18" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_18" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".12 .17 .20 1" />
+    </body>
+    <body name="belt_slat_19" pos="2.10000 0 .8425">
+      <joint name="belt_slide_19" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_19" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".09 .13 .16 1" />
+    </body>
+    <body name="belt_slat_20" pos="2.20000 0 .8425">
+      <joint name="belt_slide_20" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_20" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".12 .17 .20 1" />
+    </body>
+    <body name="belt_slat_21" pos="2.30000 0 .8425">
+      <joint name="belt_slide_21" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_21" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".09 .13 .16 1" />
+    </body>
+    <body name="belt_slat_22" pos="2.40000 0 .8425">
+      <joint name="belt_slide_22" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_22" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".12 .17 .20 1" />
+    </body>
+    <body name="belt_slat_23" pos="2.50000 0 .8425">
+      <joint name="belt_slide_23" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_23" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".09 .13 .16 1" />
+    </body>
+    <body name="belt_slat_24" pos="2.60000 0 .8425">
+      <joint name="belt_slide_24" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_24" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".12 .17 .20 1" />
+    </body>
+    <body name="belt_slat_25" pos="2.70000 0 .8425">
+      <joint name="belt_slide_25" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_25" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".09 .13 .16 1" />
+    </body>
+    <body name="belt_slat_26" pos="2.80000 0 .8425">
+      <joint name="belt_slide_26" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_26" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".12 .17 .20 1" />
+    </body>
+    <body name="belt_slat_27" pos="2.90000 0 .8425">
+      <joint name="belt_slide_27" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_27" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".09 .13 .16 1" />
+    </body>
+    <body name="belt_slat_28" pos="3.00000 0 .8425">
+      <joint name="belt_slide_28" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_28" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".12 .17 .20 1" />
+    </body>
+    <body name="belt_slat_29" pos="3.10000 0 .8425">
+      <joint name="belt_slide_29" type="slide" axis="1 0 0" limited="false" damping="0" armature=".01" frictionloss="0" />
+      <geom name="Conveyor_Slat_29" type="box" size=".0505 .34 .0075" mass="1" friction=".8 .01 .001" contype="8" conaffinity="0" group="0" rgba=".09 .13 .16 1" />
+    </body>
+    <body name="Conveyor_ControlStation" pos=".24 -.46 .78">
+      <geom name="Conveyor_Control" type="box" size=".085 .035 .045" rgba=".15 .22 .24 1" group="0" />
+      <geom name="Conveyor_ControlMount" type="box" pos="0 .06 0" size=".055 .025 .018" rgba=".4 .45 .48 1" group="0" />
+      <geom name="Conveyor_ControlBracket" type="box" pos="0 .085 0" size=".075 .008 .035" rgba=".4 .45 .48 1" group="0" />
+      <geom name="Conveyor_StartCollar" type="cylinder" pos="-0.04 -.038 0" size="0.03 .003" quat=".70710678 .70710678 0 0" rgba=".48 .55 .57 1" contype="0" conaffinity="0" mass="0" group="0" />
+      <body name="Conveyor_StartButton" pos="-0.04 -.054 0" gravcomp="1">
+        <joint name="conveyor_start_switch" type="slide" axis="0 1 0" limited="true" range="0 .008" stiffness="400" damping="3" armature=".001" margin="0" />
+        <geom name="Conveyor_StartStem" type="cylinder" pos="0 .011 0" size=".009 .009" quat=".70710678 .70710678 0 0" mass=".01" contype="0" conaffinity="0" rgba=".3 .35 .36 1" group="0" />
+        <geom name="Conveyor_StartCap" type="cylinder" size="0.023 .008" quat=".70710678 .70710678 0 0" mass=".03" contype="16" conaffinity="0" rgba=".08 .8 .2 1" group="0" />
+      </body>
+      <geom name="Conveyor_StopCollar" type="cylinder" pos="0.04 -.038 0" size="0.035 .003" quat=".70710678 .70710678 0 0" rgba=".95 .72 .08 1" contype="0" conaffinity="0" mass="0" group="0" />
+      <body name="Conveyor_StopButton" pos="0.04 -.054 0" gravcomp="1">
+        <joint name="conveyor_stop_switch" type="slide" axis="0 1 0" limited="true" range="0 .008" stiffness="400" damping="3" armature=".001" margin="0" />
+        <geom name="Conveyor_StopStem" type="cylinder" pos="0 .011 0" size=".009 .009" quat=".70710678 .70710678 0 0" mass=".01" contype="0" conaffinity="0" rgba=".3 .35 .36 1" group="0" />
+        <geom name="Conveyor_EStop" type="cylinder" size="0.028 .008" quat=".70710678 .70710678 0 0" mass=".03" contype="16" conaffinity="0" rgba="1 .12 .07 1" group="0" />
+      </body>
+    </body>
+    <camera name="scan_hand" pos="-.1 -.32 1.75" xyaxes="1 0 0 0 1 0" fovy="16" />
+    <camera name="scan_table_left" pos="-1 -.25 1.6" xyaxes="1 0 0 0 1 0" fovy="22" />
+    <camera name="scan_table_right" pos="-.55 .04 1.8" xyaxes="1 0 0 0 1 0" fovy="45" />
+    <camera name="scan_front" pos="-.66 -1.1 1.1" xyaxes="1 0 0 0 .18 .984" fovy="18" />
+  </worldbody>
+  <option timestep="0.001" integrator="implicitfast" solver="Newton" iterations="100" noslip_iterations="3" cone="elliptic" gravity="0 0 -9.81" />
+  <size njmax="4000" nconmax="1000" />
+  <default>
+    <geom friction="0.8 0.01 0.001" condim="4" solref="0.008 1" solimp="0.95 0.99 0.001" />
+    <joint damping="1" armature="0.01" solreflimit="0.004 1" margin="0.001" />
+  </default>
+  <equality>
+    <joint name="mimic_idx32_gripper_l_outer_joint1" joint1="idx32_gripper_l_outer_joint1" joint2="idx31_gripper_l_inner_joint1" polycoef="0 1 0 0 0" solref="0.003 1" />
+    <joint name="mimic_idx33_gripper_l_left_support_joint" joint1="idx33_gripper_l_left_support_joint" joint2="idx31_gripper_l_inner_joint1" polycoef="0 -1 0 0 0" solref="0.003 1" />
+    <joint name="mimic_idx34_gripper_l_inner_joint2" joint1="idx34_gripper_l_inner_joint2" joint2="idx31_gripper_l_inner_joint1" polycoef="0 -1 0 0 0" solref="0.003 1" />
+    <joint name="mimic_idx35_gripper_l_outer_joint2" joint1="idx35_gripper_l_outer_joint2" joint2="idx31_gripper_l_inner_joint1" polycoef="0 -1 0 0 0" solref="0.003 1" />
+    <joint name="mimic_idx36_gripper_l_right_support_joint" joint1="idx36_gripper_l_right_support_joint" joint2="idx31_gripper_l_inner_joint1" polycoef="0 -1 0 0 0" solref="0.003 1" />
+    <joint name="mimic_idx72_gripper_r_outer_joint1" joint1="idx72_gripper_r_outer_joint1" joint2="idx71_gripper_r_inner_joint1" polycoef="0 1 0 0 0" solref="0.003 1" />
+    <joint name="mimic_idx73_gripper_r_left_support_joint" joint1="idx73_gripper_r_left_support_joint" joint2="idx71_gripper_r_inner_joint1" polycoef="0 -1 0 0 0" solref="0.003 1" />
+    <joint name="mimic_idx74_gripper_r_inner_joint2" joint1="idx74_gripper_r_inner_joint2" joint2="idx71_gripper_r_inner_joint1" polycoef="0 -1 0 0 0" solref="0.003 1" />
+    <joint name="mimic_idx75_gripper_r_outer_joint2" joint1="idx75_gripper_r_outer_joint2" joint2="idx71_gripper_r_inner_joint1" polycoef="0 -1 0 0 0" solref="0.003 1" />
+    <joint name="mimic_idx76_gripper_r_right_support_joint" joint1="idx76_gripper_r_right_support_joint" joint2="idx71_gripper_r_inner_joint1" polycoef="0 -1 0 0 0" solref="0.003 1" />
+  </equality>
+  <actuator>
+    <position name="idx01_body_joint1_position" joint="idx01_body_joint1" kp="2000" kv="100" forcerange="-50 50" forcelimited="true" ctrlrange="-1.0822 0.0001" ctrllimited="true" />
+    <position name="idx02_body_joint2_position" joint="idx02_body_joint2" kp="2000" kv="100" forcerange="-50 50" forcelimited="true" ctrlrange="-0.0001 2.653" ctrllimited="true" />
+    <position name="idx03_body_joint3_position" joint="idx03_body_joint3" kp="2000" kv="100" forcerange="-50 50" forcelimited="true" ctrlrange="-1.907 1.039" ctrllimited="true" />
+    <position name="idx04_body_joint4_position" joint="idx04_body_joint4" kp="2000" kv="100" forcerange="-50 50" forcelimited="true" ctrlrange="-0.4364 0.4364" ctrllimited="true" />
+    <position name="idx05_body_joint5_position" joint="idx05_body_joint5" kp="2000" kv="100" forcerange="-50 50" forcelimited="true" ctrlrange="-3.0456 3.0456" ctrllimited="true" />
+    <position name="idx21_arm_l_joint1_position" joint="idx21_arm_l_joint1" kp="500" kv="40" forcerange="-108 108" forcelimited="true" ctrlrange="-3.0718 3.0718" ctrllimited="true" />
+    <position name="idx22_arm_l_joint2_position" joint="idx22_arm_l_joint2" kp="500" kv="40" forcerange="-108 108" forcelimited="true" ctrlrange="-2.0595 2.0595" ctrllimited="true" />
+    <position name="idx23_arm_l_joint3_position" joint="idx23_arm_l_joint3" kp="500" kv="40" forcerange="-35 35" forcelimited="true" ctrlrange="-3.0718 3.0718" ctrllimited="true" />
+    <position name="idx24_arm_l_joint4_position" joint="idx24_arm_l_joint4" kp="500" kv="40" forcerange="-35 35" forcelimited="true" ctrlrange="-2.4959 1.0123" ctrllimited="true" />
+    <position name="idx25_arm_l_joint5_position" joint="idx25_arm_l_joint5" kp="500" kv="40" forcerange="-18 18" forcelimited="true" ctrlrange="-3.0718 3.0718" ctrllimited="true" />
+    <position name="idx26_arm_l_joint6_position" joint="idx26_arm_l_joint6" kp="500" kv="40" forcerange="-18 18" forcelimited="true" ctrlrange="-1.0123 1.0123" ctrllimited="true" />
+    <position name="idx27_arm_l_joint7_position" joint="idx27_arm_l_joint7" kp="500" kv="40" forcerange="-18 18" forcelimited="true" ctrlrange="-1.5359 1.5359" ctrllimited="true" />
+    <position name="idx31_gripper_l_inner_joint1_position" joint="idx31_gripper_l_inner_joint1" kp="150" kv="4" forcerange="-18 18" forcelimited="true" ctrlrange="-0.91 0" ctrllimited="true" />
+    <position name="idx61_arm_r_joint1_position" joint="idx61_arm_r_joint1" kp="500" kv="40" forcerange="-108 108" forcelimited="true" ctrlrange="-3.0718 3.0718" ctrllimited="true" />
+    <position name="idx62_arm_r_joint2_position" joint="idx62_arm_r_joint2" kp="500" kv="40" forcerange="-108 108" forcelimited="true" ctrlrange="-2.0595 2.0595" ctrllimited="true" />
+    <position name="idx63_arm_r_joint3_position" joint="idx63_arm_r_joint3" kp="500" kv="40" forcerange="-35 35" forcelimited="true" ctrlrange="-3.0718 3.0718" ctrllimited="true" />
+    <position name="idx64_arm_r_joint4_position" joint="idx64_arm_r_joint4" kp="500" kv="40" forcerange="-35 35" forcelimited="true" ctrlrange="-2.4959 1.0123" ctrllimited="true" />
+    <position name="idx65_arm_r_joint5_position" joint="idx65_arm_r_joint5" kp="500" kv="40" forcerange="-18 18" forcelimited="true" ctrlrange="-3.0718 3.0718" ctrllimited="true" />
+    <position name="idx66_arm_r_joint6_position" joint="idx66_arm_r_joint6" kp="500" kv="40" forcerange="-18 18" forcelimited="true" ctrlrange="-1.0123 1.0123" ctrllimited="true" />
+    <position name="idx67_arm_r_joint7_position" joint="idx67_arm_r_joint7" kp="500" kv="40" forcerange="-18 18" forcelimited="true" ctrlrange="-1.5359 1.5359" ctrllimited="true" />
+    <position name="idx71_gripper_r_inner_joint1_position" joint="idx71_gripper_r_inner_joint1" kp="150" kv="4" forcerange="-18 18" forcelimited="true" ctrlrange="-0.91 0" ctrllimited="true" />
+    <position name="idx11_head_joint1_position" joint="idx11_head_joint1" kp="2000" kv="100" forcerange="-50 50" forcelimited="true" ctrlrange="-0.781 0.781" ctrllimited="true" />
+    <position name="idx12_head_joint2_position" joint="idx12_head_joint2" kp="2000" kv="100" forcerange="-50 50" forcelimited="true" ctrlrange="-0.151 0.151" ctrllimited="true" />
+    <position name="idx13_head_joint3_position" joint="idx13_head_joint3" kp="2000" kv="100" forcerange="-50 50" forcelimited="true" ctrlrange="-0.0181 0.5231" ctrllimited="true" />
+    <position name="idx111_chassis_lwheel_front_joint1_position" joint="idx111_chassis_lwheel_front_joint1" kp="100" kv="5" forcerange="-15 15" forcelimited="true" ctrlrange="-2.97 2.97" ctrllimited="true" />
+    <position name="idx112_chassis_lwheel_front_joint2_position" joint="idx112_chassis_lwheel_front_joint2" kp="100" kv="5" forcerange="-8 8" forcelimited="true" />
+    <position name="idx131_chassis_rwheel_front_joint1_position" joint="idx131_chassis_rwheel_front_joint1" kp="100" kv="5" forcerange="-15 15" forcelimited="true" ctrlrange="-2.97 2.97" ctrllimited="true" />
+    <position name="idx132_chassis_rwheel_front_joint2_position" joint="idx132_chassis_rwheel_front_joint2" kp="100" kv="5" forcerange="-8 8" forcelimited="true" />
+    <position name="idx141_chassis_rwheel_rear_joint1_position" joint="idx141_chassis_rwheel_rear_joint1" kp="100" kv="5" forcerange="-15 15" forcelimited="true" ctrlrange="-2.97 2.97" ctrllimited="true" />
+    <position name="idx142_chassis_rwheel_rear_joint2_position" joint="idx142_chassis_rwheel_rear_joint2" kp="100" kv="5" forcerange="-8 8" forcelimited="true" />
+    <position name="idx121_chassis_lwheel_rear_joint1_position" joint="idx121_chassis_lwheel_rear_joint1" kp="100" kv="5" forcerange="-15 15" forcelimited="true" ctrlrange="-2.97 2.97" ctrllimited="true" />
+    <position name="idx122_chassis_lwheel_rear_joint2_position" joint="idx122_chassis_lwheel_rear_joint2" kp="100" kv="5" forcerange="-8 8" forcelimited="true" />
+    <velocity name="belt_drive_00" joint="belt_slide_00" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_01" joint="belt_slide_01" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_02" joint="belt_slide_02" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_03" joint="belt_slide_03" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_04" joint="belt_slide_04" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_05" joint="belt_slide_05" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_06" joint="belt_slide_06" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_07" joint="belt_slide_07" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_08" joint="belt_slide_08" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_09" joint="belt_slide_09" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_10" joint="belt_slide_10" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_11" joint="belt_slide_11" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_12" joint="belt_slide_12" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_13" joint="belt_slide_13" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_14" joint="belt_slide_14" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_15" joint="belt_slide_15" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_16" joint="belt_slide_16" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_17" joint="belt_slide_17" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_18" joint="belt_slide_18" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_19" joint="belt_slide_19" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_20" joint="belt_slide_20" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_21" joint="belt_slide_21" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_22" joint="belt_slide_22" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_23" joint="belt_slide_23" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_24" joint="belt_slide_24" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_25" joint="belt_slide_25" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_26" joint="belt_slide_26" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_27" joint="belt_slide_27" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_28" joint="belt_slide_28" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+    <velocity name="belt_drive_29" joint="belt_slide_29" kv="300" ctrlrange="0 .12" ctrllimited="true" forcerange="-80 80" forcelimited="true" />
+  </actuator>
+  <contact>
+    <exclude body1="arm_l_link1" body2="arm_l_link2" />
+    <exclude body1="arm_l_link1" body2="arm_l_link3" />
+    <exclude body1="arm_l_link1" body2="arm_r_link1" />
+    <exclude body1="arm_l_link1" body2="body_link4" />
+    <exclude body1="arm_l_link1" body2="body_link5" />
+    <exclude body1="arm_l_link1" body2="head_link1" />
+    <exclude body1="arm_l_link2" body2="arm_l_link3" />
+    <exclude body1="arm_l_link2" body2="arm_l_link4" />
+    <exclude body1="arm_l_link2" body2="body_link5" />
+    <exclude body1="arm_l_link3" body2="arm_l_link4" />
+    <exclude body1="arm_l_link3" body2="arm_l_link5" />
+    <exclude body1="arm_l_link4" body2="arm_l_link5" />
+    <exclude body1="arm_l_link4" body2="arm_l_link6" />
+    <exclude body1="arm_l_link5" body2="arm_l_link6" />
+    <exclude body1="arm_l_link5" body2="arm_l_link7" />
+    <exclude body1="arm_l_link6" body2="arm_l_link7" />
+    <exclude body1="arm_r_link1" body2="arm_r_link2" />
+    <exclude body1="arm_r_link1" body2="arm_r_link3" />
+    <exclude body1="arm_r_link1" body2="body_link4" />
+    <exclude body1="arm_r_link1" body2="body_link5" />
+    <exclude body1="arm_r_link1" body2="head_link1" />
+    <exclude body1="arm_r_link2" body2="arm_r_link3" />
+    <exclude body1="arm_r_link2" body2="arm_r_link4" />
+    <exclude body1="arm_r_link2" body2="body_link5" />
+    <exclude body1="arm_r_link3" body2="arm_r_link4" />
+    <exclude body1="arm_r_link3" body2="arm_r_link5" />
+    <exclude body1="arm_r_link4" body2="arm_r_link5" />
+    <exclude body1="arm_r_link4" body2="arm_r_link6" />
+    <exclude body1="arm_r_link5" body2="arm_r_link6" />
+    <exclude body1="arm_r_link5" body2="arm_r_link7" />
+    <exclude body1="arm_r_link6" body2="arm_r_link7" />
+    <exclude body1="base_link" body2="body_link1" />
+    <exclude body1="base_link" body2="body_link2" />
+    <exclude body1="base_link" body2="chassis_lwheel_front_link1" />
+    <exclude body1="base_link" body2="chassis_lwheel_front_link2" />
+    <exclude body1="base_link" body2="chassis_lwheel_rear_link1" />
+    <exclude body1="base_link" body2="chassis_lwheel_rear_link2" />
+    <exclude body1="base_link" body2="chassis_rwheel_front_link1" />
+    <exclude body1="base_link" body2="chassis_rwheel_front_link2" />
+    <exclude body1="base_link" body2="chassis_rwheel_rear_link1" />
+    <exclude body1="base_link" body2="chassis_rwheel_rear_link2" />
+    <exclude body1="body_link1" body2="body_link2" />
+    <exclude body1="body_link1" body2="body_link3" />
+    <exclude body1="body_link1" body2="chassis_lwheel_front_link1" />
+    <exclude body1="body_link1" body2="chassis_lwheel_rear_link1" />
+    <exclude body1="body_link1" body2="chassis_rwheel_front_link1" />
+    <exclude body1="body_link1" body2="chassis_rwheel_rear_link1" />
+    <exclude body1="body_link2" body2="body_link3" />
+    <exclude body1="body_link2" body2="body_link4" />
+    <exclude body1="body_link3" body2="body_link4" />
+    <exclude body1="body_link3" body2="body_link5" />
+    <exclude body1="body_link4" body2="body_link5" />
+    <exclude body1="body_link4" body2="head_link1" />
+    <exclude body1="body_link5" body2="head_link1" />
+    <exclude body1="body_link5" body2="head_link2" />
+    <exclude body1="chassis_lwheel_front_link1" body2="chassis_lwheel_front_link2" />
+    <exclude body1="chassis_lwheel_front_link1" body2="chassis_lwheel_rear_link1" />
+    <exclude body1="chassis_lwheel_front_link1" body2="chassis_rwheel_front_link1" />
+    <exclude body1="chassis_lwheel_front_link1" body2="chassis_rwheel_rear_link1" />
+    <exclude body1="chassis_lwheel_rear_link1" body2="chassis_lwheel_rear_link2" />
+    <exclude body1="chassis_lwheel_rear_link1" body2="chassis_rwheel_front_link1" />
+    <exclude body1="chassis_lwheel_rear_link1" body2="chassis_rwheel_rear_link1" />
+    <exclude body1="chassis_rwheel_front_link1" body2="chassis_rwheel_front_link2" />
+    <exclude body1="chassis_rwheel_front_link1" body2="chassis_rwheel_rear_link1" />
+    <exclude body1="chassis_rwheel_rear_link1" body2="chassis_rwheel_rear_link2" />
+    <exclude body1="head_link1" body2="head_link2" />
+    <exclude body1="head_link1" body2="head_link3" />
+    <exclude body1="head_link2" body2="head_link3" />
+    <exclude body1="gripper_l_camera_link" body2="gripper_l_base_link" />
+    <exclude body1="gripper_l_camera_link" body2="gripper_l_left_inner_link" />
+    <exclude body1="gripper_l_camera_link" body2="gripper_l_left_outer_link" />
+    <exclude body1="gripper_l_camera_link" body2="gripper_l_left_support_link" />
+    <exclude body1="gripper_l_camera_link" body2="gripper_l_right_inner_link" />
+    <exclude body1="gripper_l_camera_link" body2="gripper_l_right_outer_link" />
+    <exclude body1="gripper_l_camera_link" body2="gripper_l_right_support_link" />
+    <exclude body1="gripper_l_base_link" body2="gripper_l_left_inner_link" />
+    <exclude body1="gripper_l_base_link" body2="gripper_l_left_outer_link" />
+    <exclude body1="gripper_l_base_link" body2="gripper_l_left_support_link" />
+    <exclude body1="gripper_l_base_link" body2="gripper_l_right_inner_link" />
+    <exclude body1="gripper_l_base_link" body2="gripper_l_right_outer_link" />
+    <exclude body1="gripper_l_base_link" body2="gripper_l_right_support_link" />
+    <exclude body1="gripper_l_left_inner_link" body2="gripper_l_left_outer_link" />
+    <exclude body1="gripper_l_left_inner_link" body2="gripper_l_left_support_link" />
+    <exclude body1="gripper_l_left_inner_link" body2="gripper_l_right_inner_link" />
+    <exclude body1="gripper_l_left_inner_link" body2="gripper_l_right_outer_link" />
+    <exclude body1="gripper_l_left_inner_link" body2="gripper_l_right_support_link" />
+    <exclude body1="gripper_l_left_outer_link" body2="gripper_l_left_support_link" />
+    <exclude body1="gripper_l_left_outer_link" body2="gripper_l_right_inner_link" />
+    <exclude body1="gripper_l_left_outer_link" body2="gripper_l_right_outer_link" />
+    <exclude body1="gripper_l_left_outer_link" body2="gripper_l_right_support_link" />
+    <exclude body1="gripper_l_left_support_link" body2="gripper_l_right_inner_link" />
+    <exclude body1="gripper_l_left_support_link" body2="gripper_l_right_outer_link" />
+    <exclude body1="gripper_l_left_support_link" body2="gripper_l_right_support_link" />
+    <exclude body1="gripper_l_right_inner_link" body2="gripper_l_right_outer_link" />
+    <exclude body1="gripper_l_right_inner_link" body2="gripper_l_right_support_link" />
+    <exclude body1="gripper_l_right_outer_link" body2="gripper_l_right_support_link" />
+    <exclude body1="gripper_r_camera_link" body2="gripper_r_base_link" />
+    <exclude body1="gripper_r_camera_link" body2="gripper_r_left_inner_link" />
+    <exclude body1="gripper_r_camera_link" body2="gripper_r_left_outer_link" />
+    <exclude body1="gripper_r_camera_link" body2="gripper_r_left_support_link" />
+    <exclude body1="gripper_r_camera_link" body2="gripper_r_right_inner_link" />
+    <exclude body1="gripper_r_camera_link" body2="gripper_r_right_outer_link" />
+    <exclude body1="gripper_r_camera_link" body2="gripper_r_right_support_link" />
+    <exclude body1="gripper_r_base_link" body2="gripper_r_left_inner_link" />
+    <exclude body1="gripper_r_base_link" body2="gripper_r_left_outer_link" />
+    <exclude body1="gripper_r_base_link" body2="gripper_r_left_support_link" />
+    <exclude body1="gripper_r_base_link" body2="gripper_r_right_inner_link" />
+    <exclude body1="gripper_r_base_link" body2="gripper_r_right_outer_link" />
+    <exclude body1="gripper_r_base_link" body2="gripper_r_right_support_link" />
+    <exclude body1="gripper_r_left_inner_link" body2="gripper_r_left_outer_link" />
+    <exclude body1="gripper_r_left_inner_link" body2="gripper_r_left_support_link" />
+    <exclude body1="gripper_r_left_inner_link" body2="gripper_r_right_inner_link" />
+    <exclude body1="gripper_r_left_inner_link" body2="gripper_r_right_outer_link" />
+    <exclude body1="gripper_r_left_inner_link" body2="gripper_r_right_support_link" />
+    <exclude body1="gripper_r_left_outer_link" body2="gripper_r_left_support_link" />
+    <exclude body1="gripper_r_left_outer_link" body2="gripper_r_right_inner_link" />
+    <exclude body1="gripper_r_left_outer_link" body2="gripper_r_right_outer_link" />
+    <exclude body1="gripper_r_left_outer_link" body2="gripper_r_right_support_link" />
+    <exclude body1="gripper_r_left_support_link" body2="gripper_r_right_inner_link" />
+    <exclude body1="gripper_r_left_support_link" body2="gripper_r_right_outer_link" />
+    <exclude body1="gripper_r_left_support_link" body2="gripper_r_right_support_link" />
+    <exclude body1="gripper_r_right_inner_link" body2="gripper_r_right_outer_link" />
+    <exclude body1="gripper_r_right_inner_link" body2="gripper_r_right_support_link" />
+    <exclude body1="gripper_r_right_outer_link" body2="gripper_r_right_support_link" />
+  </contact>
+</mujoco>

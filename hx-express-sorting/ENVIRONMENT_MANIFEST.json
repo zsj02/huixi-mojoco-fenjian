@@ -1,0 +1,598 @@
+{
+  "schema_version": 1,
+  "source_project": "hx-express-sorting",
+  "archived_on": "2026-11-16",
+  "scope": "simulation environment only; no task trajectories or agent",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 30,
+      "sha256": "d13d9b0e3ceb1e8e7e433fe96dce6088354376df826c6ea3c8d0cee6f6c1e7e5",
+      "source_sha256": "0091b555dc862e31ab0eafbd07c669ab0fe17fef10568ce8102110db6dccfec0",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "README.md",
+      "bytes": 2865,
+      "sha256": "98c59663b39a41f290f26dfe97f45ae63d34effaf8293e34f401e8b9a5340b0b",
+      "source_sha256": "b2b6e4f95f75e99e9d7b9e829fd53ac35b79b8a65a5d996cfc5713ce4287698b",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "assets/g2_description/LICENSE",
+      "bytes": 14848,
+      "sha256": "6039c35d74a0b76e23dabc511c258d7bf891938b96a3e0bb11b682ed82357825",
+      "archive_support_file": true
+    },
+    {
+      "path": "assets/g2_description/g2_crs_swiftpicker.urdf",
+      "bytes": 68141,
+      "sha256": "04adfad1ef473819078255d8a03ab96294c9b1af20ccbad9e27355400bb942ba",
+      "source_sha256": "04adfad1ef473819078255d8a03ab96294c9b1af20ccbad9e27355400bb942ba",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/genie.srdf.xacro",
+      "bytes": 32405,
+      "sha256": "7f18d2052678b60e69df63f9f48a528ee678fef2c590bba4b62869e133766b46",
+      "source_sha256": "7f18d2052678b60e69df63f9f48a528ee678fef2c590bba4b62869e133766b46",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/provenance.json",
+      "bytes": 16938,
+      "sha256": "a117fee0189fafe36029a28e1070503f5e9d0e254a720031ee7537bbb8ac6a93",
+      "source_sha256": "a117fee0189fafe36029a28e1070503f5e9d0e254a720031ee7537bbb8ac6a93",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/g2_crsB_no_gripper.urdf.xacro",
+      "bytes": 915,
+      "sha256": "11afe08170707575a47e383b53ca49b971326deef77ce8bb6d1d080d9005d0ec",
+      "source_sha256": "11afe08170707575a47e383b53ca49b971326deef77ce8bb6d1d080d9005d0ec",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/g2_crsB_omnipicker.urdf.xacro",
+      "bytes": 763,
+      "sha256": "3818ae0c51018a310ba729c671f78294a47d904bb799a621a291bcf39a7685fb",
+      "source_sha256": "3818ae0c51018a310ba729c671f78294a47d904bb799a621a291bcf39a7685fb",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/g2_crsB_swiftpicker.urdf.xacro",
+      "bytes": 766,
+      "sha256": "bea1a1dadaf091f0138c1f25f5357c36e52efd50804f0c97626243ed944472e1",
+      "source_sha256": "bea1a1dadaf091f0138c1f25f5357c36e52efd50804f0c97626243ed944472e1",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/g2_crsB_wuji.urdf.xacro",
+      "bytes": 745,
+      "sha256": "5d6e56bd8dbfaf90fc77d934afc2080767d3d98a06cd50bb9396eafd535c7347",
+      "source_sha256": "5d6e56bd8dbfaf90fc77d934afc2080767d3d98a06cd50bb9396eafd535c7347",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/g2_crs_no_gripper.urdf.xacro",
+      "bytes": 724,
+      "sha256": "b371200638990ba71474541312664d1d241eed6367ecea5207868330c77e20ee",
+      "source_sha256": "b371200638990ba71474541312664d1d241eed6367ecea5207868330c77e20ee",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/g2_crs_omnipicker.urdf.xacro",
+      "bytes": 570,
+      "sha256": "6b49d8d051d96e6cf3b422b07dbad45b13287f13a4edbe360be3c9542a3fe1f0",
+      "source_sha256": "6b49d8d051d96e6cf3b422b07dbad45b13287f13a4edbe360be3c9542a3fe1f0",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/g2_crs_swiftpicker.urdf.xacro",
+      "bytes": 573,
+      "sha256": "abafa82b132115e1275fe1173a165cb3183cfbe056631715f17c5ae8814614d4",
+      "source_sha256": "abafa82b132115e1275fe1173a165cb3183cfbe056631715f17c5ae8814614d4",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/G2/convex/base_link_1.STL",
+      "bytes": 1284,
+      "sha256": "d1f022d21a440a48a523a088043380610410c5db794d9f7055ab9cc40d6ce404",
+      "source_sha256": "d1f022d21a440a48a523a088043380610410c5db794d9f7055ab9cc40d6ce404",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/G2/convex/base_link_2.STL",
+      "bytes": 884,
+      "sha256": "9095f6e240ae7a4ab51d168e8086cd76652d6d9c542053ff12235fe89aa2fe74",
+      "source_sha256": "9095f6e240ae7a4ab51d168e8086cd76652d6d9c542053ff12235fe89aa2fe74",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/G2/convex/body_link2.STL",
+      "bytes": 11584,
+      "sha256": "92c0f4dfd3a1bd06ed973ec7cbbe7dcc93b6128ade9e04342a295c3e1787a823",
+      "source_sha256": "92c0f4dfd3a1bd06ed973ec7cbbe7dcc93b6128ade9e04342a295c3e1787a823",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/G2/convex/body_link3.STL",
+      "bytes": 11584,
+      "sha256": "bc6c3c31efbd4ddddd45b37df71254491906534c7504766654966365812996c0",
+      "source_sha256": "bc6c3c31efbd4ddddd45b37df71254491906534c7504766654966365812996c0",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/G2/convex/body_link4_1.STL",
+      "bytes": 4684,
+      "sha256": "b65824cce89eb1cca51a7b0e9ea278d1c687601dc188e9f92350c3d2ebf315e7",
+      "source_sha256": "b65824cce89eb1cca51a7b0e9ea278d1c687601dc188e9f92350c3d2ebf315e7",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/G2/convex/body_link4_2.STL",
+      "bytes": 7284,
+      "sha256": "8609fc426c6927990e4ea2368571ab61e880c8af0d536181ab18a04751c0aa2a",
+      "source_sha256": "8609fc426c6927990e4ea2368571ab61e880c8af0d536181ab18a04751c0aa2a",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/G2/convex/body_link4_3.STL",
+      "bytes": 2584,
+      "sha256": "edd696028af7230043e830076062536067b88ce5eb07eb8c59b095bb5b8942b9",
+      "source_sha256": "edd696028af7230043e830076062536067b88ce5eb07eb8c59b095bb5b8942b9",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/G2/convex/body_link5.STL",
+      "bytes": 13584,
+      "sha256": "4a998a0d51e09912c7f06f60f4dc68331aa3dbb0ad724541153330a62df48551",
+      "source_sha256": "4a998a0d51e09912c7f06f60f4dc68331aa3dbb0ad724541153330a62df48551",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/G2/convex/head_link3.STL",
+      "bytes": 270684,
+      "sha256": "9ae1f4ef77d245d03ef81385cd862920b934eedc79c8139b96c34d6b438d5e00",
+      "source_sha256": "9ae1f4ef77d245d03ef81385cd862920b934eedc79c8139b96c34d6b438d5e00",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/arm/crs/convex/arm_l_link1_fine_0.STL",
+      "bytes": 1684,
+      "sha256": "b8714aa3a24f3b9ed2ff90f9f169a9eba32d5b791637dfd8ddde18b2ba7da2d2",
+      "source_sha256": "b8714aa3a24f3b9ed2ff90f9f169a9eba32d5b791637dfd8ddde18b2ba7da2d2",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/arm/crs/convex/arm_l_link2_fine_0.STL",
+      "bytes": 2184,
+      "sha256": "8ed6e1f9abb2d088a536f7cf67aa1ba645c054a813382227c3f463d65413ae16",
+      "source_sha256": "8ed6e1f9abb2d088a536f7cf67aa1ba645c054a813382227c3f463d65413ae16",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/arm/crs/convex/arm_l_link3_fine_0.STL",
+      "bytes": 2184,
+      "sha256": "da47636870866f7d14bbe23dc59e60f079ceab4bc23d0c979c23ab32f4a14103",
+      "source_sha256": "da47636870866f7d14bbe23dc59e60f079ceab4bc23d0c979c23ab32f4a14103",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/arm/crs/convex/arm_l_link4_fine_0.STL",
+      "bytes": 2584,
+      "sha256": "610c1cefea6cd34ffd5ef75ad968dfa3483ca36ce2e5ffb4c234e974170c3f08",
+      "source_sha256": "610c1cefea6cd34ffd5ef75ad968dfa3483ca36ce2e5ffb4c234e974170c3f08",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/arm/crs/convex/arm_l_link5_fine_0.STL",
+      "bytes": 2584,
+      "sha256": "fbdbf3cd1e0c4534d4e4993d2a4163887b05a86062169a1c291b91327f4a8f2c",
+      "source_sha256": "fbdbf3cd1e0c4534d4e4993d2a4163887b05a86062169a1c291b91327f4a8f2c",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/arm/crs/convex/arm_l_link6_fine_0.STL",
+      "bytes": 2184,
+      "sha256": "8eceab9dabcafcecd469310efd9ddbdf84c406cb334dffd26ad6f1a96eac2c57",
+      "source_sha256": "8eceab9dabcafcecd469310efd9ddbdf84c406cb334dffd26ad6f1a96eac2c57",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/arm/crs/convex/arm_l_link7_fine_0.STL",
+      "bytes": 8384,
+      "sha256": "b52ea9dec062b6ebd8dc77bb5b3960545425169f9af3f1b1fb6a55421cb51428",
+      "source_sha256": "b52ea9dec062b6ebd8dc77bb5b3960545425169f9af3f1b1fb6a55421cb51428",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/arm/crs/convex/arm_r_link1_fine_0.STL",
+      "bytes": 2184,
+      "sha256": "1cbe62ed816297afc2e3a19d20b9e79cdfe46c6a63278f7171f6b089ce714ae9",
+      "source_sha256": "1cbe62ed816297afc2e3a19d20b9e79cdfe46c6a63278f7171f6b089ce714ae9",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/arm/crs/convex/arm_r_link2_fine_0.STL",
+      "bytes": 2184,
+      "sha256": "8ed6e1f9abb2d088a536f7cf67aa1ba645c054a813382227c3f463d65413ae16",
+      "source_sha256": "8ed6e1f9abb2d088a536f7cf67aa1ba645c054a813382227c3f463d65413ae16",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/arm/crs/convex/arm_r_link3_fine_0.STL",
+      "bytes": 2184,
+      "sha256": "da47636870866f7d14bbe23dc59e60f079ceab4bc23d0c979c23ab32f4a14103",
+      "source_sha256": "da47636870866f7d14bbe23dc59e60f079ceab4bc23d0c979c23ab32f4a14103",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/arm/crs/convex/arm_r_link4_fine_0.STL",
+      "bytes": 2184,
+      "sha256": "ea6de2977458bd620bf66216f0b54412215431cc915c6830247d3c6fac522227",
+      "source_sha256": "ea6de2977458bd620bf66216f0b54412215431cc915c6830247d3c6fac522227",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/arm/crs/convex/arm_r_link5_fine_0.STL",
+      "bytes": 2184,
+      "sha256": "500650c3328f8f38f9875a45fcf5d0cfcac3c0235dcf2ad15fa68a303e1572a3",
+      "source_sha256": "500650c3328f8f38f9875a45fcf5d0cfcac3c0235dcf2ad15fa68a303e1572a3",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/arm/crs/convex/arm_r_link6_fine_0.STL",
+      "bytes": 2184,
+      "sha256": "8eceab9dabcafcecd469310efd9ddbdf84c406cb334dffd26ad6f1a96eac2c57",
+      "source_sha256": "8eceab9dabcafcecd469310efd9ddbdf84c406cb334dffd26ad6f1a96eac2c57",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/arm/crs/convex/arm_r_link7_fine_0.STL",
+      "bytes": 8384,
+      "sha256": "b52ea9dec062b6ebd8dc77bb5b3960545425169f9af3f1b1fb6a55421cb51428",
+      "source_sha256": "b52ea9dec062b6ebd8dc77bb5b3960545425169f9af3f1b1fb6a55421cb51428",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/gripper/swiftpicker/base_link.STL",
+      "bytes": 849934,
+      "sha256": "dc86b6a32e9471c70a3d61c32647e94ef1757a49af21b81167c1723a8c95f9eb",
+      "source_sha256": "dc86b6a32e9471c70a3d61c32647e94ef1757a49af21b81167c1723a8c95f9eb",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/gripper/swiftpicker/camera_link.STL",
+      "bytes": 391184,
+      "sha256": "750873a92e9b23af434b29478c0be1cf54c4501bd05e092f4877a8718878cd25",
+      "source_sha256": "750873a92e9b23af434b29478c0be1cf54c4501bd05e092f4877a8718878cd25",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/gripper/swiftpicker/left_inner_link.STL",
+      "bytes": 165584,
+      "sha256": "14f804a49108b6943d29ca0acf1d3bd729c92633a8c9349469b38cda174ea6df",
+      "source_sha256": "14f804a49108b6943d29ca0acf1d3bd729c92633a8c9349469b38cda174ea6df",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/gripper/swiftpicker/left_outer_link.STL",
+      "bytes": 165584,
+      "sha256": "4dc04080b3c27816c22f1270aaffbd6e3462e760ed70a9063c8beeab6531fb6e",
+      "source_sha256": "4dc04080b3c27816c22f1270aaffbd6e3462e760ed70a9063c8beeab6531fb6e",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/gripper/swiftpicker/left_support_link.STL",
+      "bytes": 653284,
+      "sha256": "a4c3248cf9f2c925d18aa9bb2e3659ef0d6a703252b006a3d9f1bc8ec2e917fb",
+      "source_sha256": "a4c3248cf9f2c925d18aa9bb2e3659ef0d6a703252b006a3d9f1bc8ec2e917fb",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/gripper/swiftpicker/right_inner_link.STL",
+      "bytes": 165584,
+      "sha256": "1bbd7dce7071851482eb7c47e17934847c98f3ead2cc1a148387dbec969ba4c4",
+      "source_sha256": "1bbd7dce7071851482eb7c47e17934847c98f3ead2cc1a148387dbec969ba4c4",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/gripper/swiftpicker/right_outer_link.STL",
+      "bytes": 165584,
+      "sha256": "93c508d0575ebd1a57550fa81f71fe62d98adfa04bf63748fd7fc4185988e97d",
+      "source_sha256": "93c508d0575ebd1a57550fa81f71fe62d98adfa04bf63748fd7fc4185988e97d",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/meshes/gripper/swiftpicker/right_support_link.STL",
+      "bytes": 653284,
+      "sha256": "136475599e901768a0195df51634cb3f007d0d5a0c647855056aac31dc62a73b",
+      "source_sha256": "136475599e901768a0195df51634cb3f007d0d5a0c647855056aac31dc62a73b",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/xacro/G2.arm.crs.urdf.xacro",
+      "bytes": 35470,
+      "sha256": "a5162305932b348fe407b7faf2d27aa8cd018a84300db5172ab1da1b1cfa7031",
+      "source_sha256": "a5162305932b348fe407b7faf2d27aa8cd018a84300db5172ab1da1b1cfa7031",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/xacro/G2.arm.crsB.params.default.xacro",
+      "bytes": 11217,
+      "sha256": "bf67c471896c332b039035bc742a97f1c350db607d7a0e33b4171661621ffe5f",
+      "source_sha256": "bf67c471896c332b039035bc742a97f1c350db607d7a0e33b4171661621ffe5f",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/xacro/G2.arm.crsB.params.sysid.xacro",
+      "bytes": 17586,
+      "sha256": "ad7cdb92f20db25006b3aab02df40db2b8efa9aa71464c3c8091b21b4bfcb28c",
+      "source_sha256": "ad7cdb92f20db25006b3aab02df40db2b8efa9aa71464c3c8091b21b4bfcb28c",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/xacro/G2.arm.crsB.urdf.xacro",
+      "bytes": 27690,
+      "sha256": "3420e38832ab6bf067f8d6e90b56d998aef067379da0041491dd80f2df93ebab",
+      "source_sha256": "3420e38832ab6bf067f8d6e90b56d998aef067379da0041491dd80f2df93ebab",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/xacro/G2.body.urdf.xacro",
+      "bytes": 12794,
+      "sha256": "68a6b3378cb746291e5ff2f484363033964c6a3f0aa51087c2ca8f3b734aecec",
+      "source_sha256": "68a6b3378cb746291e5ff2f484363033964c6a3f0aa51087c2ca8f3b734aecec",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/xacro/G2.chassis.urdf.xacro",
+      "bytes": 8643,
+      "sha256": "53cd3e11bfb40bec0392d6021019eb4d169ea743672cbc63e813a91f6d2d7431",
+      "source_sha256": "53cd3e11bfb40bec0392d6021019eb4d169ea743672cbc63e813a91f6d2d7431",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/xacro/G2.gripper.urdf.xacro",
+      "bytes": 2745,
+      "sha256": "912a2e8445bbd76eab28739a0d7882979a9dd7f2e949e953ced6cbf6b5908598",
+      "source_sha256": "912a2e8445bbd76eab28739a0d7882979a9dd7f2e949e953ced6cbf6b5908598",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/xacro/G2.urdf.xacro",
+      "bytes": 3322,
+      "sha256": "29906b8514dde1be8f7be008a0b1d1c72bc8ec12174f3c4daede5a7f9e6c5f80",
+      "source_sha256": "29906b8514dde1be8f7be008a0b1d1c72bc8ec12174f3c4daede5a7f9e6c5f80",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/xacro/common_properties.xacro",
+      "bytes": 1407,
+      "sha256": "480b9e848312956be3f478a7c803ad6dac14915cd1ecf4a639af3b7ec3ce3d57",
+      "source_sha256": "480b9e848312956be3f478a7c803ad6dac14915cd1ecf4a639af3b7ec3ce3d57",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/xacro/gripper.omnipicker.urdf.xacro",
+      "bytes": 16748,
+      "sha256": "8bac5b5e848164918fcf3a64f662c91f728472ea816cdf178a50a0bfeb0b9a6c",
+      "source_sha256": "8bac5b5e848164918fcf3a64f662c91f728472ea816cdf178a50a0bfeb0b9a6c",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/xacro/gripper.swiftpicker.urdf.xacro",
+      "bytes": 16510,
+      "sha256": "866df3b9394d8da9d206f84fe90d6bf36270365aa5688c3dc725166d56977afe",
+      "source_sha256": "866df3b9394d8da9d206f84fe90d6bf36270365aa5688c3dc725166d56977afe",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/robots/genie/g2/xacro/gripper.wuji.urdf.xacro",
+      "bytes": 40128,
+      "sha256": "5b7a08d5971b4403ab463895a426834a8704f01b21be938422297e341f4232d7",
+      "source_sha256": "5b7a08d5971b4403ab463895a426834a8704f01b21be938422297e341f4232d7",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "assets/g2_description/swiftpicker.srdf.xacro",
+      "bytes": 6581,
+      "sha256": "d02906dfc42917cb968fc4520f2a9e2a71aa3fdb1b032abfaf93127f3f825003",
+      "source_sha256": "d02906dfc42917cb968fc4520f2a9e2a71aa3fdb1b032abfaf93127f3f825003",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "hxsim/__init__.py",
+      "bytes": 84,
+      "sha256": "fdfc87bd51879ce627884ddcfe1d9c1af346d15fc3c251d70d51ca1ee1a70a3f",
+      "source_sha256": "fdfc87bd51879ce627884ddcfe1d9c1af346d15fc3c251d70d51ca1ee1a70a3f",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "hxsim/conveyor_assets.py",
+      "bytes": 5633,
+      "sha256": "2e694b1695001f42bd652ba66505aa53ad9ad0609cb78589523301d993bc74db",
+      "source_sha256": "2e694b1695001f42bd652ba66505aa53ad9ad0609cb78589523301d993bc74db",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "hxsim/mobile.py",
+      "bytes": 4147,
+      "sha256": "e1c4707770dec8d4183fe16fddf56134ae3c40e43a24c52b4fbae0e54b59737f",
+      "source_sha256": "e1c4707770dec8d4183fe16fddf56134ae3c40e43a24c52b4fbae0e54b59737f",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "hxsim/runtime.py",
+      "bytes": 3951,
+      "sha256": "4ac6333fb73936533b273768d2efc6667ec93452e87552eb65138743a9312a31",
+      "source_sha256": "e2ce22abe6b26ccbe3398158fc50eb1dd11c730d3695929f91489d34de8981bf",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "hxsim/workcell_assets.py",
+      "bytes": 4387,
+      "sha256": "2c1c195a3f5dde75b19c29f10c36b3408a45e9ec4b8af0f1dd104ab0410df475",
+      "source_sha256": "2c1c195a3f5dde75b19c29f10c36b3408a45e9ec4b8af0f1dd104ab0410df475",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "hxsim/workstation.py",
+      "bytes": 4093,
+      "sha256": "529e96f563163df2a8dd5c7bbfe335ceb4ee4dd821bf555a856f636c27a2825b",
+      "source_sha256": "c8735c6656c3bab31d1e58c6edfc946825c26bba6929efe600f54bd95f3b8b75",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "preview/environment.js",
+      "bytes": 2409,
+      "sha256": "49af9429a3771f762e789f03f2e0d9ab489ca2ba328a94cc3ee69484c5c38cee",
+      "archive_support_file": true
+    },
+    {
+      "path": "preview/index.html",
+      "bytes": 978,
+      "sha256": "a44c5972267d99a0f7bf4227da141421d934e63531b3f6f9b7165c11dc22f76c",
+      "source_sha256": "09ca076c77421ec5ac7571994fd72419c883956f54e30d1ba99c0c6d21aef6dc",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "preview/vendor/LICENSE.three",
+      "bytes": 1081,
+      "sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "source_sha256": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "preview/vendor/OrbitControls.js",
+      "bytes": 32134,
+      "sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e",
+      "source_sha256": "80efaadea4f8a636a65fb0bd08bfef62f3d93a0bb94e2e7500f23176c5c07f4e",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "preview/vendor/three.module.js",
+      "bytes": 1314681,
+      "sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "source_sha256": "ce1fa418de16a19495a9f72495580e3015d7745c296d3ce0485897f902ddedfb",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 79,
+      "sha256": "ac1937be4d9fc299cac5b0da95eb148eda621e4805a9d603c06a6f37410ae1e4",
+      "source_sha256": "c295b882259b49ac3abed51ae45317bb234b6d828ed597887010f709e721d832",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "scenes/g2_configuration.json",
+      "bytes": 5847,
+      "sha256": "4792cf623ce185008ac4f1cf1ae23998d1882e5a912173a9df20e6c8202a3719",
+      "source_sha256": "4792cf623ce185008ac4f1cf1ae23998d1882e5a912173a9df20e6c8202a3719",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "scenes/g2_environment.json",
+      "bytes": 6336705,
+      "sha256": "aaf30bea99963d8f846cb4a38a0211529d83c0d31ee01575eba203d1312cc146",
+      "archive_support_file": true
+    },
+    {
+      "path": "scenes/g2_operation.xml",
+      "bytes": 78276,
+      "sha256": "3315f72bab4d7304627abbff1c269811134dee85ab47635adfb9e8028b33be12",
+      "source_sha256": "3315f72bab4d7304627abbff1c269811134dee85ab47635adfb9e8028b33be12",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "scenes/labels/HX000000420001.png",
+      "bytes": 38589,
+      "sha256": "e1722dadf47d581733fd3137de87b80a642281455fbc85a31197548aac716ec4",
+      "source_sha256": "e1722dadf47d581733fd3137de87b80a642281455fbc85a31197548aac716ec4",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "scenes/labels/HX000000420002.png",
+      "bytes": 38588,
+      "sha256": "dbc8518974d4d5fc49bd05079620d617b9f5593bbcb14d4f77c61bd619dbcf5c",
+      "source_sha256": "dbc8518974d4d5fc49bd05079620d617b9f5593bbcb14d4f77c61bd619dbcf5c",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "scenes/labels/HX000000420003.png",
+      "bytes": 38966,
+      "sha256": "d042979cc2d51818a28c061d9f89409abfbca2abacc0577e80608a9fb9e96b77",
+      "source_sha256": "d042979cc2d51818a28c061d9f89409abfbca2abacc0577e80608a9fb9e96b77",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "scenes/labels/HX000000420004.png",
+      "bytes": 38529,
+      "sha256": "a00f85e42dc93db0b3187bad131bc0eba118bb71da039dc9157df6c05e7ee38e",
+      "source_sha256": "a00f85e42dc93db0b3187bad131bc0eba118bb71da039dc9157df6c05e7ee38e",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "scenes/labels/HX000000420005.png",
+      "bytes": 38928,
+      "sha256": "e4a5e888b5efd21ef41f6234045014e6f9f8a6bc5f8b7e9e3484eb47af076ee2",
+      "source_sha256": "e4a5e888b5efd21ef41f6234045014e6f9f8a6bc5f8b7e9e3484eb47af076ee2",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "scenes/labels/HX000000420006.png",
+      "bytes": 39060,
+      "sha256": "4dc51b939986f402203b5f79fb86a082dec8a25ceb5e59fa27a08509ee51fe3b",
+      "source_sha256": "4dc51b939986f402203b5f79fb86a082dec8a25ceb5e59fa27a08509ee51fe3b",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "scenes/labels/HX1001.png",
+      "bytes": 16473,
+      "sha256": "7992f8bc8d8217266f8016c136da21ed213f2ccd23557534289165d0039da01e",
+      "source_sha256": "7992f8bc8d8217266f8016c136da21ed213f2ccd23557534289165d0039da01e",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "scenes/preview.json",
+      "bytes": 154191,
+      "sha256": "771b83c132f477122b53a8936babf3c65df3df37c7c53f1c5aa087cd79e1d647",
+      "source_sha256": "771b83c132f477122b53a8936babf3c65df3df37c7c53f1c5aa087cd79e1d647",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "scenes/workstation_manifest.json",
+      "bytes": 7466,
+      "sha256": "095f2a5b30616175caad66fae3514945f1385102fd2c504f4fda71f8f226a52d",
+      "source_sha256": "095f2a5b30616175caad66fae3514945f1385102fd2c504f4fda71f8f226a52d",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "scripts/build_mujoco.py",
+      "bytes": 11919,
+      "sha256": "7294fb6f7f765a99b6ec3f8ad8b629cfe2a80dc760ad7ce292c65b8f6335aefb",
+      "source_sha256": "7294fb6f7f765a99b6ec3f8ad8b629cfe2a80dc760ad7ce292c65b8f6335aefb",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "scripts/export_environment.py",
+      "bytes": 2243,
+      "sha256": "0948a89154c684264327447828d46f5dab47974032dfada04f6e892f099ffefb",
+      "archive_support_file": true
+    },
+    {
+      "path": "scripts/validate_environment.py",
+      "bytes": 1329,
+      "sha256": "c3472fcbd2df36d32b0165bde688ff00692d68015e927284902cac531ae28fc2",
+      "archive_support_file": true
+    },
+    {
+      "path": "scripts/view_sim.py",
+      "bytes": 549,
+      "sha256": "1ec9ed9f468c30a56d6157ec11cf86946194534213f32f7864f524cde554f6bd",
+      "source_sha256": "dea13b3c48b9603fe9cbfcedb1679b595a3e59e5989bea9d38dcde0c7544c257",
+      "unchanged_from_source": false
+    }
+  ]
+}
