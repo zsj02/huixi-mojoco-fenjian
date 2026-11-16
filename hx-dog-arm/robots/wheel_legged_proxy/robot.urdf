@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="wheel_legged_proxy">
+  <link name="base_footprint" />
+  <link name="base_link">
+    <collision>
+      <geometry>
+        <box size="0.72 0.42 0.18" />
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="0.72 0.42 0.18" />
+      </geometry>
+      <material name="base_link_color">
+        <color rgba=".12 .2 .25 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="body_mount" type="fixed">
+    <parent link="base_footprint" />
+    <child link="base_link" />
+    <origin xyz="0 0 0.36" rpy="0 0 0" />
+  </joint>
+  <link name="front_left_leg">
+    <collision>
+      <geometry>
+        <box size="0.065 0.06 0.24" />
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="0.065 0.06 0.24" />
+      </geometry>
+      <material name="front_left_leg_color">
+        <color rgba=".8 .65 .1 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="front_left_stance" type="fixed">
+    <parent link="base_link" />
+    <child link="front_left_leg" />
+    <origin xyz="0.27 0.3 -0.10999999999999999" rpy="0 0 0" />
+  </joint>
+  <link name="front_left_wheel">
+    <collision>
+      <geometry>
+        <cylinder radius="0.14" length="0.07" />
+      </geometry>
+      <origin rpy="1.5707963267948966 0 0" />
+    </collision>
+    <visual>
+      <geometry>
+        <cylinder radius="0.14" length="0.07" />
+      </geometry>
+      <origin rpy="1.5707963267948966 0 0" />
+      <material name="front_left_wheel_color">
+        <color rgba=".06 .06 .06 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="front_left_wheel_joint" type="continuous">
+    <parent link="front_left_leg" />
+    <child link="front_left_wheel" />
+    <origin xyz="0.0 0.0 -0.10999999999999999" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="-1e+16" upper="1e+16" effort="30" velocity="3" />
+  </joint>
+  <link name="front_right_leg">
+    <collision>
+      <geometry>
+        <box size="0.065 0.06 0.24" />
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="0.065 0.06 0.24" />
+      </geometry>
+      <material name="front_right_leg_color">
+        <color rgba=".8 .65 .1 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="front_right_stance" type="fixed">
+    <parent link="base_link" />
+    <child link="front_right_leg" />
+    <origin xyz="0.27 -0.3 -0.10999999999999999" rpy="0 0 0" />
+  </joint>
+  <link name="front_right_wheel">
+    <collision>
+      <geometry>
+        <cylinder radius="0.14" length="0.07" />
+      </geometry>
+      <origin rpy="1.5707963267948966 0 0" />
+    </collision>
+    <visual>
+      <geometry>
+        <cylinder radius="0.14" length="0.07" />
+      </geometry>
+      <origin rpy="1.5707963267948966 0 0" />
+      <material name="front_right_wheel_color">
+        <color rgba=".06 .06 .06 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="front_right_wheel_joint" type="continuous">
+    <parent link="front_right_leg" />
+    <child link="front_right_wheel" />
+    <origin xyz="0.0 0.0 -0.10999999999999999" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="-1e+16" upper="1e+16" effort="30" velocity="3" />
+  </joint>
+  <link name="rear_left_leg">
+    <collision>
+      <geometry>
+        <box size="0.065 0.06 0.24" />
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="0.065 0.06 0.24" />
+      </geometry>
+      <material name="rear_left_leg_color">
+        <color rgba=".8 .65 .1 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rear_left_stance" type="fixed">
+    <parent link="base_link" />
+    <child link="rear_left_leg" />
+    <origin xyz="-0.27 0.3 -0.10999999999999999" rpy="0 0 0" />
+  </joint>
+  <link name="rear_left_wheel">
+    <collision>
+      <geometry>
+        <cylinder radius="0.14" length="0.07" />
+      </geometry>
+      <origin rpy="1.5707963267948966 0 0" />
+    </collision>
+    <visual>
+      <geometry>
+        <cylinder radius="0.14" length="0.07" />
+      </geometry>
+      <origin rpy="1.5707963267948966 0 0" />
+      <material name="rear_left_wheel_color">
+        <color rgba=".06 .06 .06 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rear_left_wheel_joint" type="continuous">
+    <parent link="rear_left_leg" />
+    <child link="rear_left_wheel" />
+    <origin xyz="0.0 0.0 -0.10999999999999999" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="-1e+16" upper="1e+16" effort="30" velocity="3" />
+  </joint>
+  <link name="rear_right_leg">
+    <collision>
+      <geometry>
+        <box size="0.065 0.06 0.24" />
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="0.065 0.06 0.24" />
+      </geometry>
+      <material name="rear_right_leg_color">
+        <color rgba=".8 .65 .1 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rear_right_stance" type="fixed">
+    <parent link="base_link" />
+    <child link="rear_right_leg" />
+    <origin xyz="-0.27 -0.3 -0.10999999999999999" rpy="0 0 0" />
+  </joint>
+  <link name="rear_right_wheel">
+    <collision>
+      <geometry>
+        <cylinder radius="0.14" length="0.07" />
+      </geometry>
+      <origin rpy="1.5707963267948966 0 0" />
+    </collision>
+    <visual>
+      <geometry>
+        <cylinder radius="0.14" length="0.07" />
+      </geometry>
+      <origin rpy="1.5707963267948966 0 0" />
+      <material name="rear_right_wheel_color">
+        <color rgba=".06 .06 .06 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="rear_right_wheel_joint" type="continuous">
+    <parent link="rear_right_leg" />
+    <child link="rear_right_wheel" />
+    <origin xyz="0.0 0.0 -0.10999999999999999" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="-1e+16" upper="1e+16" effort="30" velocity="3" />
+  </joint>
+  <link name="lift">
+    <collision>
+      <geometry>
+        <box size="0.08 0.08 0.1" />
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="0.08 0.08 0.1" />
+      </geometry>
+      <material name="lift_color">
+        <color rgba=".8 .65 .1 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="lift_joint" type="prismatic">
+    <parent link="base_link" />
+    <child link="lift" />
+    <origin xyz="0.1 0 0.12" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper="1.1" effort="100" velocity="3" />
+  </joint>
+  <link name="lateral">
+    <collision>
+      <geometry>
+        <box size="0.07 0.07 0.07" />
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="0.07 0.07 0.07" />
+      </geometry>
+      <material name="lateral_color">
+        <color rgba=".12 .2 .25 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="lateral_joint" type="prismatic">
+    <parent link="lift" />
+    <child link="lateral" />
+    <origin xyz="0.0 0 0.0" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="-0.2" upper="0.2" effort="100" velocity="3" />
+  </joint>
+  <link name="reach">
+    <collision>
+      <geometry>
+        <box size="0.3 0.055 0.055" />
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="0.3 0.055 0.055" />
+      </geometry>
+      <material name="reach_color">
+        <color rgba=".12 .2 .25 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="reach_joint" type="prismatic">
+    <parent link="lateral" />
+    <child link="reach" />
+    <origin xyz="0.18000000000000002 0 0.0" rpy="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit lower="0" upper="0.6" effort="100" velocity="3" />
+  </joint>
+  <link name="pitch">
+    <collision>
+      <geometry>
+        <box size="0.035 0.05 0.05" />
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="0.035 0.05 0.05" />
+      </geometry>
+      <material name="pitch_color">
+        <color rgba=".12 .2 .25 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="wrist_pitch_joint" type="revolute">
+    <parent link="reach" />
+    <child link="pitch" />
+    <origin xyz="0.15999999999999998 0 0.0" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="-1.5707963267948966" upper="1.5707963267948966" effort="4" velocity="3" />
+  </joint>
+  <link name="wrist">
+    <collision>
+      <geometry>
+        <box size="0.04 0.055 0.055" />
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="0.04 0.055 0.055" />
+      </geometry>
+      <material name="wrist_color">
+        <color rgba=".12 .2 .25 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="wrist_joint" type="revolute">
+    <parent link="pitch" />
+    <child link="wrist" />
+    <origin xyz="0.0 0 0.0" rpy="0 0 0" />
+    <axis xyz="1 0 0" />
+    <limit lower="-3.141592653589793" upper="3.141592653589793" effort="4" velocity="3" />
+  </joint>
+  <link name="left_finger">
+    <collision>
+      <geometry>
+        <box size="0.1 0.012 0.035" />
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="0.1 0.012 0.035" />
+      </geometry>
+      <material name="left_finger_color">
+        <color rgba=".85 .85 .8 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="left_finger_joint" type="prismatic">
+    <parent link="wrist" />
+    <child link="left_finger" />
+    <origin xyz="0.06 0.018 0.0" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="0" upper="0.075" effort="12" velocity="3" />
+  </joint>
+  <link name="right_finger">
+    <collision>
+      <geometry>
+        <box size="0.1 0.012 0.035" />
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="0.1 0.012 0.035" />
+      </geometry>
+      <material name="right_finger_color">
+        <color rgba=".85 .85 .8 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="right_finger_joint" type="prismatic">
+    <parent link="wrist" />
+    <child link="right_finger" />
+    <origin xyz="0.06 -0.018 0.0" rpy="0 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit lower="0" upper="0.075" effort="12" velocity="3" />
+  </joint>
+  <link name="sensor_mount">
+    <collision>
+      <geometry>
+        <box size="0.055 0.06 0.055" />
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <box size="0.055 0.06 0.055" />
+      </geometry>
+      <material name="sensor_mount_color">
+        <color rgba=".12 .2 .25 1" />
+      </material>
+    </visual>
+  </link>
+  <joint name="sensor_mount_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="sensor_mount" />
+    <origin xyz="0.15 0 0.62" rpy="0 0 0" />
+  </joint>
+  <link name="camera_optical_frame" />
+  <joint name="camera_optical_joint" type="fixed">
+    <parent link="sensor_mount" />
+    <child link="camera_optical_frame" />
+    <origin xyz="0 0 0" rpy="-1.5707963267948966 0 -1.5707963267948966" />
+  </joint>
+</robot>
