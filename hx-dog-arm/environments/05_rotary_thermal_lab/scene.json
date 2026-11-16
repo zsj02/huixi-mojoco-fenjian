@@ -1,0 +1,329 @@
+{
+  "schema_version": 1,
+  "id": "05_rotary_thermal_lab",
+  "name_zh": "旋钮测温扩展走廊",
+  "kind": "thermal",
+  "size_m": [
+    12.0,
+    4.8
+  ],
+  "spawn": [
+    -2.0,
+    0.0,
+    0.01,
+    0.0
+  ],
+  "robot": "wheel_legged_proxy",
+  "cabinets": [
+    {
+      "id": "cabinet_01",
+      "pose": [
+        -5.48,
+        -0.525,
+        0.65,
+        0,
+        0,
+        3.141592653589793
+      ],
+      "room": null,
+      "row": 0,
+      "column": 0,
+      "actuator": "press",
+      "initial_fault": true,
+      "meter_kwh": 1337.3,
+      "temperature_c": 31.5,
+      "press_travel_m": 0.012,
+      "activation_travel_m": 0.006,
+      "activation_hold_s": 0.12,
+      "rotation_required_rad": 1.5707963267948966,
+      "service_pose": [
+        -4.35,
+        -0.365,
+        3.141592653589793
+      ]
+    },
+    {
+      "id": "cabinet_02",
+      "pose": [
+        -5.48,
+        0.525,
+        0.65,
+        0,
+        0,
+        3.141592653589793
+      ],
+      "room": null,
+      "row": 0,
+      "column": 1,
+      "actuator": "rotate_then_press",
+      "initial_fault": false,
+      "meter_kwh": 1474.6,
+      "temperature_c": 34.0,
+      "press_travel_m": 0.012,
+      "activation_travel_m": 0.006,
+      "activation_hold_s": 0.12,
+      "rotation_required_rad": 1.5707963267948966,
+      "service_pose": [
+        -4.35,
+        0.685,
+        3.141592653589793
+      ]
+    },
+    {
+      "id": "cabinet_03",
+      "pose": [
+        -5.48,
+        -0.525,
+        1.55,
+        0,
+        0,
+        3.141592653589793
+      ],
+      "room": null,
+      "row": 1,
+      "column": 0,
+      "actuator": "press",
+      "initial_fault": false,
+      "meter_kwh": 1611.9,
+      "temperature_c": 36.5,
+      "press_travel_m": 0.012,
+      "activation_travel_m": 0.006,
+      "activation_hold_s": 0.12,
+      "rotation_required_rad": 1.5707963267948966,
+      "service_pose": [
+        -4.35,
+        -0.365,
+        3.141592653589793
+      ]
+    },
+    {
+      "id": "cabinet_04",
+      "pose": [
+        -5.48,
+        0.525,
+        1.55,
+        0,
+        0,
+        3.141592653589793
+      ],
+      "room": null,
+      "row": 1,
+      "column": 1,
+      "actuator": "rotate_then_press",
+      "initial_fault": true,
+      "meter_kwh": 1749.2,
+      "temperature_c": 39.0,
+      "press_travel_m": 0.012,
+      "activation_travel_m": 0.006,
+      "activation_hold_s": 0.12,
+      "rotation_required_rad": 1.5707963267948966,
+      "service_pose": [
+        -4.35,
+        0.685,
+        3.141592653589793
+      ]
+    },
+    {
+      "id": "cabinet_05",
+      "pose": [
+        5.48,
+        -0.525,
+        0.65,
+        0,
+        0,
+        0.0
+      ],
+      "room": null,
+      "row": 0,
+      "column": 0,
+      "actuator": "press",
+      "initial_fault": true,
+      "meter_kwh": 1886.5,
+      "temperature_c": 41.5,
+      "press_travel_m": 0.012,
+      "activation_travel_m": 0.006,
+      "activation_hold_s": 0.12,
+      "rotation_required_rad": 1.5707963267948966,
+      "service_pose": [
+        4.35,
+        -0.685,
+        0
+      ]
+    },
+    {
+      "id": "cabinet_06",
+      "pose": [
+        5.48,
+        0.525,
+        0.65,
+        0,
+        0,
+        0.0
+      ],
+      "room": null,
+      "row": 0,
+      "column": 1,
+      "actuator": "rotate_then_press",
+      "initial_fault": false,
+      "meter_kwh": 2023.8000000000002,
+      "temperature_c": 44.0,
+      "press_travel_m": 0.012,
+      "activation_travel_m": 0.006,
+      "activation_hold_s": 0.12,
+      "rotation_required_rad": 1.5707963267948966,
+      "service_pose": [
+        4.35,
+        0.365,
+        0
+      ]
+    },
+    {
+      "id": "cabinet_07",
+      "pose": [
+        5.48,
+        -0.525,
+        1.55,
+        0,
+        0,
+        0.0
+      ],
+      "room": null,
+      "row": 1,
+      "column": 0,
+      "actuator": "press",
+      "initial_fault": false,
+      "meter_kwh": 2161.1000000000004,
+      "temperature_c": 46.5,
+      "press_travel_m": 0.012,
+      "activation_travel_m": 0.006,
+      "activation_hold_s": 0.12,
+      "rotation_required_rad": 1.5707963267948966,
+      "service_pose": [
+        4.35,
+        -0.685,
+        0
+      ]
+    },
+    {
+      "id": "cabinet_08",
+      "pose": [
+        5.48,
+        0.525,
+        1.55,
+        0,
+        0,
+        0.0
+      ],
+      "room": null,
+      "row": 1,
+      "column": 1,
+      "actuator": "rotate_then_press",
+      "initial_fault": true,
+      "meter_kwh": 2298.4,
+      "temperature_c": 49.0,
+      "press_travel_m": 0.012,
+      "activation_travel_m": 0.006,
+      "activation_hold_s": 0.12,
+      "rotation_required_rad": 1.5707963267948966,
+      "service_pose": [
+        4.35,
+        0.365,
+        0
+      ]
+    }
+  ],
+  "evaluation": {
+    "seed": 20,
+    "fault_interval_s": 0,
+    "truth_topic": "/evaluation/ground_truth",
+    "policy_may_read_truth": false
+  },
+  "capabilities_required": [
+    "navigation",
+    "visual_inspection",
+    "press",
+    "rotate_then_press"
+  ],
+  "patrol_poses": [
+    [
+      -4.0,
+      0,
+      3.141592653589793
+    ],
+    [
+      4.0,
+      0,
+      0
+    ]
+  ],
+  "obstacles": [
+    [
+      -6.199999999999999,
+      -2.6,
+      -6.0,
+      2.6
+    ],
+    [
+      -6.0,
+      -2.6,
+      6.0,
+      -2.4
+    ],
+    [
+      6.0,
+      -2.6,
+      6.199999999999999,
+      2.6
+    ],
+    [
+      -6.0,
+      2.4,
+      6.0,
+      2.6
+    ],
+    [
+      -5.710000000000001,
+      -0.9550000000000001,
+      -5.25,
+      -0.09500000000000003
+    ],
+    [
+      -5.710000000000001,
+      0.09500000000000003,
+      -5.25,
+      0.9550000000000001
+    ],
+    [
+      5.25,
+      -0.9550000000000001,
+      5.710000000000001,
+      -0.09500000000000003
+    ],
+    [
+      5.25,
+      0.09500000000000003,
+      5.710000000000001,
+      0.9550000000000001
+    ],
+    [
+      3.4,
+      -1.975,
+      4.6,
+      -1.325
+    ]
+  ],
+  "future_capabilities": [
+    "tool_grasp",
+    "infrared_measurement",
+    "temperature_report"
+  ],
+  "thermometer": {
+    "model": "ir_thermometer",
+    "table_pose": [
+      4.0,
+      -1.65,
+      0.72
+    ],
+    "status": "graspable_rigid_body; measurement_policy_not_implemented"
+  }
+}

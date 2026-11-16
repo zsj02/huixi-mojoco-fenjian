@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="440" viewBox="0 0 1100 440">
+<rect width="1100" height="440" fill="#10212c"/>
+<text x="35" y="40" fill="#edf4f5" font-size="24">05_rotary_thermal_lab</text>
+<text x="35" y="69" fill="#a8c5cb" font-size="15">Plan view / 8 cabinets / each end: 2 columns x 2 tiers</text>
+<rect x="61.00000000000003" y="91.0" width="8.999999999999968" height="234.0" fill="#617d8b"/>
+<rect x="70.0" y="316.0" width="540.0" height="9.000000000000007" fill="#617d8b"/>
+<rect x="610.0" y="91.0" width="8.999999999999968" height="234.0" fill="#617d8b"/>
+<rect x="70.0" y="91.0" width="540.0" height="9.000000000000007" fill="#617d8b"/>
+<rect x="83.04999999999995" y="212.275" width="20.70000000000004" height="38.7" fill="#617d8b"/>
+<rect x="83.04999999999995" y="165.02499999999998" width="20.70000000000004" height="38.7" fill="#617d8b"/>
+<rect x="576.25" y="212.275" width="20.70000000000004" height="38.7" fill="#617d8b"/>
+<rect x="576.25" y="165.02499999999998" width="20.70000000000004" height="38.7" fill="#617d8b"/>
+<rect x="493.0" y="267.625" width="53.999999999999986" height="29.250000000000007" fill="#617d8b"/>
+<text x="78.39999999999998" y="207.625" fill="#ffcd62" font-size="13">01/03</text>
+<text x="78.39999999999998" y="160.375" fill="#ffcd62" font-size="13">02/04</text>
+<text x="571.6" y="207.625" fill="#ffcd62" font-size="13">05/07</text>
+<text x="571.6" y="160.375" fill="#ffcd62" font-size="13">06/08</text>
+<circle cx="250.0" cy="208.0" r="12" fill="#55dfc1"/>
+<text x="35" y="405" fill="#a8c5cb" font-size="15">Meters: kWh | red: service required | green: normal | Z tiers: 0.65 / 1.55 m</text>
+</svg>

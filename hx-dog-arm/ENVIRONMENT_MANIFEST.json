@@ -1,0 +1,320 @@
+{
+  "schema_version": 1,
+  "source_project": "hx-dog-arm",
+  "archived_on": "2026-11-16",
+  "scope": "simulation environment only; no task trajectories or agent",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 30,
+      "sha256": "5428809a7af879ad0b6085b60c7b93293419bb3f0b3b4a050a119cb2a63a175b",
+      "source_sha256": "08579a765d28c69153febe2936d6e7c9e7518e4e62b7d906654e1d07a70e7c10",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "CMakeLists.txt",
+      "bytes": 887,
+      "sha256": "a746892529259f156d56861d80a48a88c2f50108023cc78b7026e31bd2e8d039",
+      "archive_support_file": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 2982,
+      "sha256": "b1202fb64876b8a811e30dcf85595713d51219532535bf8823d164c021ad50c4",
+      "source_sha256": "4b1700d822a00c6ef3261cf6d849983853925a029237fa781c93f17600ee0718",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "environments/01_grid_baseline/README.md",
+      "bytes": 2982,
+      "sha256": "35cb8b86225ec0604414cccd9b51e9c67150df64139fb323e4e8f2dff9b232df",
+      "source_sha256": "1941bfd0bc21b1a09a9d348bb5ec5d75032267ff983e05f7380d0d591b23738f",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "environments/01_grid_baseline/map.pgm",
+      "bytes": 30175,
+      "sha256": "aa1b041fae1b030719a7167258d5e061decbb65f9bc9cc1779993e22b6ec9162",
+      "source_sha256": "aa1b041fae1b030719a7167258d5e061decbb65f9bc9cc1779993e22b6ec9162",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/01_grid_baseline/map.yaml",
+      "bytes": 123,
+      "sha256": "e7e84243e50238ca3dea37c38abb5300ef478da82d1446be9da1dc65f88aba4c",
+      "source_sha256": "e7e84243e50238ca3dea37c38abb5300ef478da82d1446be9da1dc65f88aba4c",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/01_grid_baseline/preview.svg",
+      "bytes": 1559,
+      "sha256": "63055695198846e1bc13c4a5f74b21c2cff6341ac7f02faefc73ff2dfb0a0893",
+      "source_sha256": "63055695198846e1bc13c4a5f74b21c2cff6341ac7f02faefc73ff2dfb0a0893",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/01_grid_baseline/scene.json",
+      "bytes": 5723,
+      "sha256": "0652c17d1c563c15ed9b431c5fa55252749a0b2e377271c459e599cb2b338f79",
+      "source_sha256": "0652c17d1c563c15ed9b431c5fa55252749a0b2e377271c459e599cb2b338f79",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/01_grid_baseline/world.sdf",
+      "bytes": 132296,
+      "sha256": "4f0c9c43ec897e7c308c8d9f51785b35bc38f9f9faa130edd9b2f316ec708dcd",
+      "source_sha256": "4f0c9c43ec897e7c308c8d9f51785b35bc38f9f9faa130edd9b2f316ec708dcd",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/02_outdoor_switchyard/README.md",
+      "bytes": 3371,
+      "sha256": "476d86f56d5bb997aae1f5161fbe78931437c4b88777495e38328b72622a503a",
+      "source_sha256": "b514c9cbf53fdce9b6fca29284116fed3c9e0cc86547748261f1d8e3562f4484",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "environments/02_outdoor_switchyard/map.pgm",
+      "bytes": 30175,
+      "sha256": "84c2e18b364708bd08bbd65ac00dd433f5a1b30ba883ed747b03526bafde1fa8",
+      "source_sha256": "84c2e18b364708bd08bbd65ac00dd433f5a1b30ba883ed747b03526bafde1fa8",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/02_outdoor_switchyard/map.yaml",
+      "bytes": 123,
+      "sha256": "e7e84243e50238ca3dea37c38abb5300ef478da82d1446be9da1dc65f88aba4c",
+      "source_sha256": "e7e84243e50238ca3dea37c38abb5300ef478da82d1446be9da1dc65f88aba4c",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/02_outdoor_switchyard/preview.svg",
+      "bytes": 1689,
+      "sha256": "334cb56a8d1dea6f2afbb2d965da53ae21c48a06c065bb4d1ab5b8360306e6ef",
+      "source_sha256": "334cb56a8d1dea6f2afbb2d965da53ae21c48a06c065bb4d1ab5b8360306e6ef",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/02_outdoor_switchyard/scene.json",
+      "bytes": 5944,
+      "sha256": "9ab09078e38fd9c837d40214bcd6628abc4a3571de47848b5361e89aac0697f5",
+      "source_sha256": "9ab09078e38fd9c837d40214bcd6628abc4a3571de47848b5361e89aac0697f5",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/02_outdoor_switchyard/world.sdf",
+      "bytes": 625798,
+      "sha256": "3fca68b608a0ad58d5a1b54f7dbc013e31f6b683fa4555d8253b2943fc7ddbc3",
+      "source_sha256": "3fca68b608a0ad58d5a1b54f7dbc013e31f6b683fa4555d8253b2943fc7ddbc3",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/03_utility_tunnel/README.md",
+      "bytes": 3347,
+      "sha256": "13e03332cb45bc2cce4f3a8e4138bafeb3a5f48f6d8eedd43d679a97987bc258",
+      "source_sha256": "412638a224a43eb10db963195c87171b92d5a7c7f1a742c82f570485f5f6f1e2",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "environments/03_utility_tunnel/map.pgm",
+      "bytes": 35294,
+      "sha256": "d3348c78e3f508740b498dabba114df4e6f920ce9634140f9d661b0986806216",
+      "source_sha256": "d3348c78e3f508740b498dabba114df4e6f920ce9634140f9d661b0986806216",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/03_utility_tunnel/map.yaml",
+      "bytes": 124,
+      "sha256": "78984843df420d21fcd356479d66f9c916e7c51f2ca82b761c7bf282d4fd1c05",
+      "source_sha256": "78984843df420d21fcd356479d66f9c916e7c51f2ca82b761c7bf282d4fd1c05",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/03_utility_tunnel/preview.svg",
+      "bytes": 2027,
+      "sha256": "fee51b2373a8af944f30a769a195f736801f988c6cec51f41410d2e1fe3ddc6b",
+      "source_sha256": "fee51b2373a8af944f30a769a195f736801f988c6cec51f41410d2e1fe3ddc6b",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/03_utility_tunnel/scene.json",
+      "bytes": 5983,
+      "sha256": "99ac1bf84e8ce56214493018b09971ab6d9965fe3903596b1fa9fdb8752a452b",
+      "source_sha256": "99ac1bf84e8ce56214493018b09971ab6d9965fe3903596b1fa9fdb8752a452b",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/03_utility_tunnel/world.sdf",
+      "bytes": 143721,
+      "sha256": "060050f18b59f097224a582df16f46a7eb75d09e4f0a1adc88634e57f54778f8",
+      "source_sha256": "060050f18b59f097224a582df16f46a7eb75d09e4f0a1adc88634e57f54778f8",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/04_access_control_rooms/README.md",
+      "bytes": 3502,
+      "sha256": "3a662614c608774ceaa9c0c1166bee54082035af788bbb34282061f239fc52c4",
+      "source_sha256": "f9010fc1454339169cac56e68b95e2ce85abf98dfe13234d6f40ff1435e3fdda",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "environments/04_access_control_rooms/map.pgm",
+      "bytes": 30175,
+      "sha256": "eabd231fdf7709bab5f438b48184d854088feb6463f65742c07c8c9f18bed22d",
+      "source_sha256": "eabd231fdf7709bab5f438b48184d854088feb6463f65742c07c8c9f18bed22d",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/04_access_control_rooms/map.yaml",
+      "bytes": 123,
+      "sha256": "e7e84243e50238ca3dea37c38abb5300ef478da82d1446be9da1dc65f88aba4c",
+      "source_sha256": "e7e84243e50238ca3dea37c38abb5300ef478da82d1446be9da1dc65f88aba4c",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/04_access_control_rooms/preview.svg",
+      "bytes": 1866,
+      "sha256": "47f875cacfb255bc51c724aa79c3eaf4f82c219df0d54b3172e9a4a2ca93e29f",
+      "source_sha256": "47f875cacfb255bc51c724aa79c3eaf4f82c219df0d54b3172e9a4a2ca93e29f",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/04_access_control_rooms/scene.json",
+      "bytes": 6294,
+      "sha256": "474bd13e26364e7df42570c2322c192288df80ba9ef2dcab84dd23decd284b83",
+      "source_sha256": "474bd13e26364e7df42570c2322c192288df80ba9ef2dcab84dd23decd284b83",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/04_access_control_rooms/world.sdf",
+      "bytes": 147997,
+      "sha256": "4457e915da254fc37284b684f232bf9cae3b27b6cdc729b1e800b417ab85db82",
+      "source_sha256": "4457e915da254fc37284b684f232bf9cae3b27b6cdc729b1e800b417ab85db82",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/05_rotary_thermal_lab/README.md",
+      "bytes": 3366,
+      "sha256": "2e6eb72309e1d18dd21444ceabd0138eadf7cfa33d8baa2b4939b0e969251932",
+      "source_sha256": "1700272c5318848cd4dfba1870690dd6e75e440c1b6a5d21ae3d9254dd45ea5a",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "environments/05_rotary_thermal_lab/map.pgm",
+      "bytes": 30175,
+      "sha256": "46374db7972d405ceafb176524d234af40db12356691ca09178b151410332da3",
+      "source_sha256": "46374db7972d405ceafb176524d234af40db12356691ca09178b151410332da3",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/05_rotary_thermal_lab/map.yaml",
+      "bytes": 123,
+      "sha256": "e7e84243e50238ca3dea37c38abb5300ef478da82d1446be9da1dc65f88aba4c",
+      "source_sha256": "e7e84243e50238ca3dea37c38abb5300ef478da82d1446be9da1dc65f88aba4c",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/05_rotary_thermal_lab/preview.svg",
+      "bytes": 1664,
+      "sha256": "f4e0103c921144905ad56026b4fdfe1fe7c6f4b60672b2eae384c950b9500354",
+      "source_sha256": "f4e0103c921144905ad56026b4fdfe1fe7c6f4b60672b2eae384c950b9500354",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/05_rotary_thermal_lab/scene.json",
+      "bytes": 6155,
+      "sha256": "78442aa1638fb8d917d0f40f35472bc6feeab248bba79aa534af4351c0e86ae9",
+      "source_sha256": "78442aa1638fb8d917d0f40f35472bc6feeab248bba79aa534af4351c0e86ae9",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "environments/05_rotary_thermal_lab/world.sdf",
+      "bytes": 198913,
+      "sha256": "e1608fc979491b205cf3e93f2637729cd5c90caffab1d85376aa6de667d2d9a1",
+      "source_sha256": "e1608fc979491b205cf3e93f2637729cd5c90caffab1d85376aa6de667d2d9a1",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "robots/wheel_legged_proxy/README.md",
+      "bytes": 546,
+      "sha256": "a88f241671aac7c3c79bfb36ac9c6b57f2eacc013b0bd3d2b3a74b386f933816",
+      "source_sha256": "49645f3f89716fccf8fa661c680a2842b539962ad9e397672dba494382fafad9",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "robots/wheel_legged_proxy/robot.sdf",
+      "bytes": 26334,
+      "sha256": "5a531a0f41ec0c4fdffc6ad75b97d3b28de9bb3669867e1a9bc8405f359b9014",
+      "source_sha256": "5a531a0f41ec0c4fdffc6ad75b97d3b28de9bb3669867e1a9bc8405f359b9014",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "robots/wheel_legged_proxy/robot.urdf",
+      "bytes": 10798,
+      "sha256": "30d720f44ea37fead323414b664a70ff0f755ffd7cf4fe14a397dbb69bcc0ef9",
+      "source_sha256": "30d720f44ea37fead323414b664a70ff0f755ffd7cf4fe14a397dbb69bcc0ef9",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "src/hx_grid_sim/hx_grid_sim/__init__.py",
+      "bytes": 59,
+      "sha256": "aacd46d09c63964628831a5dcb8ded66d44ce83fc59da744d16f3b8f62660981",
+      "source_sha256": "aacd46d09c63964628831a5dcb8ded66d44ce83fc59da744d16f3b8f62660981",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "src/hx_grid_sim/hx_grid_sim/robot.py",
+      "bytes": 12029,
+      "sha256": "bb38f480bcc6298e67fa45401d0d92dcd2ad21e9e48985e8eb3d66ecda5cdbce",
+      "source_sha256": "bb38f480bcc6298e67fa45401d0d92dcd2ad21e9e48985e8eb3d66ecda5cdbce",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "src/hx_grid_sim/include/hx_grid_sim/InteractionState.hh",
+      "bytes": 1532,
+      "sha256": "e1cb2c2095b9ce242c3288a0909dc6ddd32518f2cdf1de0a4c21ed9307dc077d",
+      "source_sha256": "e1cb2c2095b9ce242c3288a0909dc6ddd32518f2cdf1de0a4c21ed9307dc077d",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "src/hx_grid_sim/src/GridInteractions.cc",
+      "bytes": 8303,
+      "sha256": "ea4ab324cee7577ab90754485255bba29563d5f355a97eac8177f8346e06ced2",
+      "source_sha256": "ea4ab324cee7577ab90754485255bba29563d5f355a97eac8177f8346e06ced2",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "tests/interaction_state.cc",
+      "bytes": 2391,
+      "sha256": "e51781da0b35ed5761cf3b65d70e4e317ef79368bf9c1516442abd9008ccfa07",
+      "source_sha256": "e51781da0b35ed5761cf3b65d70e4e317ef79368bf9c1516442abd9008ccfa07",
+      "unchanged_from_source": true
+    },
+    {
+      "path": "tests/test_environments.py",
+      "bytes": 9641,
+      "sha256": "e4e841d3a988f88f085159811967ed8a4a795ff788748a86dec5f6740f834a81",
+      "source_sha256": "355e290103d3ed30f951f561a54b087cd1691aed958af847e4b90fab7a7e7632",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "tools/generate_environments.py",
+      "bytes": 26094,
+      "sha256": "5f58ba6b5f5525d53305212f9d6e54e13dfd4c4527bb518c209036c10595bb21",
+      "source_sha256": "add166bf112042af1ca4c36c4a7090498136adc05ea82d83feb8f3e8fc776b09",
+      "unchanged_from_source": false
+    },
+    {
+      "path": "tools/validate_environment.py",
+      "bytes": 906,
+      "sha256": "556271bbfd31b89eb767192e081aa9a33d8c17b3bba499ad289333f90fca7d5a",
+      "archive_support_file": true
+    },
+    {
+      "path": "tools/view_environment.py",
+      "bytes": 1738,
+      "sha256": "50f4132f5d7f7633fa3e546fea18da54e8213bade96c59873be751307b54d68e",
+      "archive_support_file": true
+    }
+  ]
+}
